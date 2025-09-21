@@ -1,0 +1,40 @@
+Built target ament_cmake_python_copy_chess_arm
+running egg_info
+writing chess_arm.egg-info/PKG-INFO
+writing dependency_links to chess_arm.egg-info/dependency_links.txt
+writing top-level names to chess_arm.egg-info/top_level.txt
+reading manifest file 'chess_arm.egg-info/SOURCES.txt'
+writing manifest file 'chess_arm.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_chess_arm_egg
+-- Install configuration: ""
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/environment/pythonpath.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/environment/pythonpath.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/local/lib/python3.10/dist-packages/chess_arm-0.0.1-py3.10.egg-info
+-- Installing: /home/jetson/aichess/install/chess_arm/local/lib/python3.10/dist-packages/chess_arm-0.0.1-py3.10.egg-info/top_level.txt
+-- Installing: /home/jetson/aichess/install/chess_arm/local/lib/python3.10/dist-packages/chess_arm-0.0.1-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/jetson/aichess/install/chess_arm/local/lib/python3.10/dist-packages/chess_arm-0.0.1-py3.10.egg-info/PKG-INFO
+-- Installing: /home/jetson/aichess/install/chess_arm/local/lib/python3.10/dist-packages/chess_arm-0.0.1-py3.10.egg-info/dependency_links.txt
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/local/lib/python3.10/dist-packages/chess_arm
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/local/lib/python3.10/dist-packages/chess_arm/__init__.py
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/local/lib/python3.10/dist-packages/chess_arm/arm_controller.py
+Listing '/home/jetson/aichess/install/chess_arm/local/lib/python3.10/dist-packages/chess_arm'...
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/lib/chess_arm/arm_controller.py
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/launch
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/config
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/resource
+-- Installing: /home/jetson/aichess/install/chess_arm/share/chess_arm/resource/chess_arm
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/ament_index/resource_index/package_run_dependencies/chess_arm
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/ament_index/resource_index/parent_prefix_path/chess_arm
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/environment/ament_prefix_path.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/environment/path.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/environment/path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/local_setup.bash
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/local_setup.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/local_setup.zsh
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/local_setup.dsv
+-- Installing: /home/jetson/aichess/install/chess_arm/share/chess_arm/package.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/ament_index/resource_index/packages/chess_arm
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/cmake/chess_armConfig.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/cmake/chess_armConfig-version.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_arm/share/chess_arm/package.xml

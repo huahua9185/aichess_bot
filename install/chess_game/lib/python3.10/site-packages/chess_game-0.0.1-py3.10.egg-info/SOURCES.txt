@@ -1,0 +1,14 @@
+package.xml
+setup.py
+../../build/chess_game/chess_game.egg-info/PKG-INFO
+../../build/chess_game/chess_game.egg-info/SOURCES.txt
+../../build/chess_game/chess_game.egg-info/dependency_links.txt
+../../build/chess_game/chess_game.egg-info/entry_points.txt
+../../build/chess_game/chess_game.egg-info/requires.txt
+../../build/chess_game/chess_game.egg-info/top_level.txt
+../../build/chess_game/chess_game.egg-info/zip-safe
+chess_game/__init__.py
+chess_game/chess_ai.py
+chess_game/game_coordinator.py
+chess_game/game_engine.py
+resource/chess_game

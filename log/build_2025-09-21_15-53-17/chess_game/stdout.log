@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/chess_game/chess_game.egg-info/PKG-INFO
+writing dependency_links to ../../build/chess_game/chess_game.egg-info/dependency_links.txt
+writing entry points to ../../build/chess_game/chess_game.egg-info/entry_points.txt
+writing requirements to ../../build/chess_game/chess_game.egg-info/requires.txt
+writing top-level names to ../../build/chess_game/chess_game.egg-info/top_level.txt
+reading manifest file '../../build/chess_game/chess_game.egg-info/SOURCES.txt'
+writing manifest file '../../build/chess_game/chess_game.egg-info/SOURCES.txt'
+running build
+running build_py
+copying chess_game/chess_ai.py -> /home/jetson/aichess/build/chess_game/build/lib/chess_game
+copying chess_game/game_coordinator.py -> /home/jetson/aichess/build/chess_game/build/lib/chess_game
+copying chess_game/__init__.py -> /home/jetson/aichess/build/chess_game/build/lib/chess_game
+copying chess_game/game_engine.py -> /home/jetson/aichess/build/chess_game/build/lib/chess_game
+running install
+running install_lib
+running install_data
+copying resource/chess_game -> /home/jetson/aichess/install/chess_game/share/ament_index/resource_index/packages
+copying package.xml -> /home/jetson/aichess/install/chess_game/share/chess_game
+running install_egg_info
+removing '/home/jetson/aichess/install/chess_game/lib/python3.10/site-packages/chess_game-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../../build/chess_game/chess_game.egg-info to /home/jetson/aichess/install/chess_game/lib/python3.10/site-packages/chess_game-0.0.1-py3.10.egg-info
+running install_scripts
+Installing chess_ai script to /home/jetson/aichess/install/chess_game/bin
+Installing game_coordinator script to /home/jetson/aichess/install/chess_game/bin
+Installing game_engine script to /home/jetson/aichess/install/chess_game/bin
+writing list of installed files to '/home/jetson/aichess/build/chess_game/install.log'

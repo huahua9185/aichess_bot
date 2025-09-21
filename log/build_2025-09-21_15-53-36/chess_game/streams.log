@@ -1,0 +1,29 @@
+[1.582s] Invoking command in '/home/jetson/aichess/src/chess_game': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/build/chess_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/aichess/install/chess_game/lib/python3.10/site-packages:/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/chess_game build --build-base /home/jetson/aichess/build/chess_game/build install --record /home/jetson/aichess/build/chess_game/install.log --single-version-externally-managed install_data
+[2.248s] running egg_info
+[2.297s] writing ../../build/chess_game/chess_game.egg-info/PKG-INFO
+[2.298s] writing dependency_links to ../../build/chess_game/chess_game.egg-info/dependency_links.txt
+[2.298s] writing entry points to ../../build/chess_game/chess_game.egg-info/entry_points.txt
+[2.299s] writing requirements to ../../build/chess_game/chess_game.egg-info/requires.txt
+[2.299s] writing top-level names to ../../build/chess_game/chess_game.egg-info/top_level.txt
+[2.400s] reading manifest file '../../build/chess_game/chess_game.egg-info/SOURCES.txt'
+[2.402s] writing manifest file '../../build/chess_game/chess_game.egg-info/SOURCES.txt'
+[2.403s] running build
+[2.403s] running build_py
+[2.403s] copying chess_game/chess_ai.py -> /home/jetson/aichess/build/chess_game/build/lib/chess_game
+[2.404s] copying chess_game/game_coordinator.py -> /home/jetson/aichess/build/chess_game/build/lib/chess_game
+[2.404s] copying chess_game/__init__.py -> /home/jetson/aichess/build/chess_game/build/lib/chess_game
+[2.404s] copying chess_game/game_engine.py -> /home/jetson/aichess/build/chess_game/build/lib/chess_game
+[2.405s] running install
+[2.412s] running install_lib
+[2.464s] running install_data
+[2.464s] copying resource/chess_game -> /home/jetson/aichess/install/chess_game/share/ament_index/resource_index/packages
+[2.465s] copying package.xml -> /home/jetson/aichess/install/chess_game/share/chess_game
+[2.465s] running install_egg_info
+[2.517s] removing '/home/jetson/aichess/install/chess_game/lib/python3.10/site-packages/chess_game-0.0.1-py3.10.egg-info' (and everything under it)
+[2.517s] Copying ../../build/chess_game/chess_game.egg-info to /home/jetson/aichess/install/chess_game/lib/python3.10/site-packages/chess_game-0.0.1-py3.10.egg-info
+[2.519s] running install_scripts
+[2.621s] Installing chess_ai script to /home/jetson/aichess/install/chess_game/bin
+[2.621s] Installing game_coordinator script to /home/jetson/aichess/install/chess_game/bin
+[2.621s] Installing game_engine script to /home/jetson/aichess/install/chess_game/bin
+[2.623s] writing list of installed files to '/home/jetson/aichess/build/chess_game/install.log'
+[2.674s] Invoked command in '/home/jetson/aichess/src/chess_game' returned '0': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/build/chess_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/aichess/install/chess_game/lib/python3.10/site-packages:/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/chess_game build --build-base /home/jetson/aichess/build/chess_game/build install --record /home/jetson/aichess/build/chess_game/install.log --single-version-externally-managed install_data

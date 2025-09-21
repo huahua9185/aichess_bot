@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:70 (file):
+  file INSTALL cannot find
+  "/home/jetson/aichess/src/chess_arm/chess_arm/move_planner.py": No such
+  file or directory.
+
+

@@ -1,0 +1,4 @@
+[console_scripts]
+chess_ai = chess_game.chess_ai:main
+game_coordinator = chess_game.game_coordinator:main
+game_engine = chess_game.game_engine:main
