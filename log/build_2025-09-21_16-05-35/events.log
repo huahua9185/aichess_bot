@@ -1,0 +1,77 @@
+[0.000000] (-) TimerEvent: {}
+[0.000247] (-) JobUnselected: {'identifier': 'chess_arm'}
+[0.000626] (-) JobUnselected: {'identifier': 'chess_camera'}
+[0.000854] (-) JobUnselected: {'identifier': 'chess_description'}
+[0.001131] (-) JobUnselected: {'identifier': 'chess_game'}
+[0.001212] (-) JobUnselected: {'identifier': 'chess_interfaces'}
+[0.001273] (-) JobUnselected: {'identifier': 'chess_simulation'}
+[0.001329] (-) JobUnselected: {'identifier': 'chess_vision'}
+[0.001387] (chess_coordinator) JobQueued: {'identifier': 'chess_coordinator', 'dependencies': OrderedDict([('chess_interfaces', '/home/jetson/aichess/install/chess_interfaces')])}
+[0.001452] (chess_coordinator) JobStarted: {'identifier': 'chess_coordinator'}
+[0.020240] (chess_coordinator) JobProgress: {'identifier': 'chess_coordinator', 'progress': 'cmake'}
+[0.021052] (chess_coordinator) Command: {'cmd': ['/usr/bin/cmake', '/home/jetson/aichess/src/chess_coordinator', '-DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_coordinator'], 'cwd': '/home/jetson/aichess/build/chess_coordinator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897'), ('no_proxy', 'localhost,127.0.0.1,192.168.1.0/24'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '10.0.0.130 55030 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('LC_TIME', 'en_US.UTF-8'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.1.0/24'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('https_proxy', 'http://127.0.0.1:7897'), ('COLCON_PREFIX_PATH', '/home/jetson/dofbot_pro_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (4GB ram)'), ('JETSON_SERIAL_NUMBER', '1421725053484'), ('http_proxy', 'http://127.0.0.1:7897'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jetson/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('ROS_DOMAIN_ID', '98'), ('AMENT_PREFIX_PATH', '/home/jetson/aichess/install/chess_interfaces:/home/jetson/dofbot_pro_ws/install/orbbec_description:/home/jetson/dofbot_pro_ws/install/orbbec_camera:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_moveit:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface:/home/jetson/dofbot_pro_ws/install/dofbot_pro_info:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_description:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/aichess/build/chess_coordinator'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.130 55030 10.0.0.119 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('HTTP_PROXY', 'http://127.0.0.1:7897'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/aichess/install/chess_interfaces:/home/jetson/dofbot_pro_ws/install/orbbec_description:/home/jetson/dofbot_pro_ws/install/orbbec_camera:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_moveit:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface:/home/jetson/dofbot_pro_ws/install/dofbot_pro_info:/home/jetson/dofbot_pro_ws/install/dofbot_pro_description:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0004')]), 'shell': False}
+[0.099475] (-) TimerEvent: {}
+[0.106972] (chess_coordinator) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.191138] (chess_coordinator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.199549] (-) TimerEvent: {}
+[0.201680] (chess_coordinator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299698] (-) TimerEvent: {}
+[0.304374] (chess_coordinator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.314910] (chess_coordinator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.315307] (chess_coordinator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.315892] (chess_coordinator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.320569] (chess_coordinator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399844] (-) TimerEvent: {}
+[0.438441] (chess_coordinator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.449224] (chess_coordinator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.449644] (chess_coordinator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.450309] (chess_coordinator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.457087] (chess_coordinator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499965] (-) TimerEvent: {}
+[0.600266] (-) TimerEvent: {}
+[0.700555] (-) TimerEvent: {}
+[0.800853] (-) TimerEvent: {}
+[0.901158] (-) TimerEvent: {}
+[1.001466] (-) TimerEvent: {}
+[1.101754] (-) TimerEvent: {}
+[1.193257] (chess_coordinator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.201841] (-) TimerEvent: {}
+[1.302093] (-) TimerEvent: {}
+[1.402404] (-) TimerEvent: {}
+[1.403078] (chess_coordinator) StdoutLine: {'line': b'-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.407795] (chess_coordinator) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.490717] (chess_coordinator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.502467] (-) TimerEvent: {}
+[1.504236] (chess_coordinator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.522881] (chess_coordinator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.548124] (chess_coordinator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.582917] (chess_coordinator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.602556] (-) TimerEvent: {}
+[1.634830] (chess_coordinator) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.658996] (chess_coordinator) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.685592] (chess_coordinator) StdoutLine: {'line': b'-- Found chess_interfaces: 0.0.0 (/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake)\n'}
+[1.702648] (-) TimerEvent: {}
+[1.716968] (chess_coordinator) StdoutLine: {'line': b'-- Found lifecycle_msgs: 1.2.1 (/opt/ros/humble/share/lifecycle_msgs/cmake)\n'}
+[1.752321] (chess_coordinator) StderrLine: {'line': b'CMake Error at CMakeLists.txt:17 (find_package):\n'}
+[1.752657] (chess_coordinator) StderrLine: {'line': b'  By not providing "Findlaunch_ros.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.752818] (chess_coordinator) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.752932] (chess_coordinator) StderrLine: {'line': b'  "launch_ros", but CMake did not find one.\n'}
+[1.753037] (chess_coordinator) StderrLine: {'line': b'\n'}
+[1.753136] (chess_coordinator) StderrLine: {'line': b'  Could not find a package configuration file provided by "launch_ros" with\n'}
+[1.753235] (chess_coordinator) StderrLine: {'line': b'  any of the following names:\n'}
+[1.753330] (chess_coordinator) StderrLine: {'line': b'\n'}
+[1.753422] (chess_coordinator) StderrLine: {'line': b'    launch_rosConfig.cmake\n'}
+[1.753513] (chess_coordinator) StderrLine: {'line': b'    launch_ros-config.cmake\n'}
+[1.753617] (chess_coordinator) StderrLine: {'line': b'\n'}
+[1.753714] (chess_coordinator) StderrLine: {'line': b'  Add the installation prefix of "launch_ros" to CMAKE_PREFIX_PATH or set\n'}
+[1.753808] (chess_coordinator) StderrLine: {'line': b'  "launch_ros_DIR" to a directory containing one of the above files.  If\n'}
+[1.753900] (chess_coordinator) StderrLine: {'line': b'  "launch_ros" provides a separate development package or SDK, be sure it has\n'}
+[1.753992] (chess_coordinator) StderrLine: {'line': b'  been installed.\n'}
+[1.754081] (chess_coordinator) StderrLine: {'line': b'\n'}
+[1.754170] (chess_coordinator) StderrLine: {'line': b'\n'}
+[1.754259] (chess_coordinator) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.754357] (chess_coordinator) StdoutLine: {'line': b'See also "/home/jetson/aichess/build/chess_coordinator/CMakeFiles/CMakeOutput.log".\n'}
+[1.765256] (chess_coordinator) CommandEnded: {'returncode': 1}
+[1.798762] (chess_coordinator) JobEnded: {'identifier': 'chess_coordinator', 'rc': 1}
+[1.802726] (-) TimerEvent: {}
+[1.809253] (-) EventReactorShutdown: {}

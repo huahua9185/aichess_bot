@@ -1,0 +1,193 @@
+[0.247s] colcon DEBUG Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'chess_coordinator']
+[0.247s] colcon DEBUG Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['chess_coordinator'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb66379a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb6637460>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb6637460>>, mixin_verb=('build',))
+[0.322s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) check parameters
+[0.322s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) check parameters
+[0.322s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) check parameters
+[0.322s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) check parameters
+[0.322s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) discover
+[0.322s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) discover
+[0.323s] colcon.colcon_core.package_discovery INFO Crawling recursively for packages in '/home/jetson/aichess'
+[0.323s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore'
+[0.323s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore_ament_install'
+[0.323s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_pkg']
+[0.323s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_pkg'
+[0.323s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_meta']
+[0.323s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_meta'
+[0.323s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ros']
+[0.324s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ros'
+[0.350s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['cmake', 'python']
+[0.350s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'cmake'
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python'
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['python_setup_py']
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python_setup_py'
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(build) by extension 'ignore'
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(build) ignored
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'ignore'
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'ignore_ament_install'
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extensions ['colcon_pkg']
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'colcon_pkg'
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extensions ['colcon_meta']
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'colcon_meta'
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extensions ['ros']
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'ros'
+[0.357s] colcon.colcon_core.package_identification DEBUG Package 'chess_camera' with type 'ros.ament_python' and name 'chess_camera'
+[0.357s] colcon.colcon_core.package_identification Level 1 _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] colcon.colcon_core.package_identification Level 1 _identify(install) by extension 'ignore'
+[0.357s] colcon.colcon_core.package_identification Level 1 _identify(install) ignored
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(log) by extension 'ignore'
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(log) ignored
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore'
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore_ament_install'
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_pkg']
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_pkg'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_meta']
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_meta'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ros']
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ros'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['cmake', 'python']
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'cmake'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['python_setup_py']
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python_setup_py'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_arm) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_arm) by extension 'ignore'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_arm) by extension 'ignore_ament_install'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_arm) by extensions ['colcon_pkg']
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_arm) by extension 'colcon_pkg'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_arm) by extensions ['colcon_meta']
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_arm) by extension 'colcon_meta'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_arm) by extensions ['ros']
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_arm) by extension 'ros'
+[0.363s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_arm' with type 'ros.ament_cmake' and name 'chess_arm'
+[0.364s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_coordinator) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_coordinator) by extension 'ignore'
+[0.364s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_coordinator) by extension 'ignore_ament_install'
+[0.364s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_coordinator) by extensions ['colcon_pkg']
+[0.364s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_coordinator) by extension 'colcon_pkg'
+[0.364s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_coordinator) by extensions ['colcon_meta']
+[0.364s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_coordinator) by extension 'colcon_meta'
+[0.364s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_coordinator) by extensions ['ros']
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_coordinator) by extension 'ros'
+[0.366s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_coordinator' with type 'ros.ament_cmake' and name 'chess_coordinator'
+[0.367s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extensions ['ignore', 'ignore_ament_install']
+[0.367s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'ignore'
+[0.367s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'ignore_ament_install'
+[0.367s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extensions ['colcon_pkg']
+[0.367s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'colcon_pkg'
+[0.367s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extensions ['colcon_meta']
+[0.367s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'colcon_meta'
+[0.367s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extensions ['ros']
+[0.367s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'ros'
+[0.368s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_description' with type 'ros.ament_cmake' and name 'chess_description'
+[0.369s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_game) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_game) by extension 'ignore'
+[0.369s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_game) by extension 'ignore_ament_install'
+[0.369s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_game) by extensions ['colcon_pkg']
+[0.369s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_game) by extension 'colcon_pkg'
+[0.369s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_game) by extensions ['colcon_meta']
+[0.369s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_game) by extension 'colcon_meta'
+[0.369s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_game) by extensions ['ros']
+[0.369s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_game) by extension 'ros'
+[0.370s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_game' with type 'ros.ament_python' and name 'chess_game'
+[0.371s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'ignore'
+[0.371s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'ignore_ament_install'
+[0.371s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extensions ['colcon_pkg']
+[0.371s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'colcon_pkg'
+[0.371s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extensions ['colcon_meta']
+[0.371s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'colcon_meta'
+[0.371s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extensions ['ros']
+[0.371s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'ros'
+[0.373s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_interfaces' with type 'ros.ament_cmake' and name 'chess_interfaces'
+[0.373s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.373s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'ignore'
+[0.373s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'ignore_ament_install'
+[0.373s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extensions ['colcon_pkg']
+[0.373s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'colcon_pkg'
+[0.373s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extensions ['colcon_meta']
+[0.373s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'colcon_meta'
+[0.373s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extensions ['ros']
+[0.373s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'ros'
+[0.375s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_simulation' with type 'ros.ament_cmake' and name 'chess_simulation'
+[0.375s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.375s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_vision) by extension 'ignore'
+[0.375s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_vision) by extension 'ignore_ament_install'
+[0.375s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_vision) by extensions ['colcon_pkg']
+[0.375s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_vision) by extension 'colcon_pkg'
+[0.376s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_vision) by extensions ['colcon_meta']
+[0.376s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_vision) by extension 'colcon_meta'
+[0.376s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_vision) by extensions ['ros']
+[0.376s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_vision) by extension 'ros'
+[0.377s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_vision' with type 'ros.ament_python' and name 'chess_vision'
+[0.377s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) using defaults
+[0.377s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) discover
+[0.377s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) using defaults
+[0.377s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) discover
+[0.377s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) using defaults
+[0.408s] colcon.colcon_core.package_selection INFO Skipping not selected package 'chess_description' in 'src/chess_description'
+[0.408s] colcon.colcon_core.package_selection INFO Skipping not selected package 'chess_interfaces' in 'src/chess_interfaces'
+[0.408s] colcon.colcon_core.package_selection INFO Skipping not selected package 'chess_simulation' in 'src/chess_simulation'
+[0.409s] colcon.colcon_core.package_selection INFO Skipping not selected package 'chess_arm' in 'src/chess_arm'
+[0.409s] colcon.colcon_core.package_selection INFO Skipping not selected package 'chess_camera' in 'chess_camera'
+[0.409s] colcon.colcon_core.package_selection INFO Skipping not selected package 'chess_game' in 'src/chess_game'
+[0.409s] colcon.colcon_core.package_selection INFO Skipping not selected package 'chess_vision' in 'src/chess_vision'
+[0.409s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) check parameters
+[0.409s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) discover
+[0.414s] colcon.colcon_installed_package_information.package_discovery DEBUG Found 17 installed packages in /home/jetson/dofbot_pro_ws/install
+[0.417s] colcon.colcon_installed_package_information.package_discovery DEBUG Found 407 installed packages in /opt/ros/humble
+[0.422s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) using defaults
+[0.534s] colcon.colcon_core.verb Level 5 set package 'chess_coordinator' build argument 'cmake_args' from command line to 'None'
+[0.535s] colcon.colcon_core.verb Level 5 set package 'chess_coordinator' build argument 'cmake_target' from command line to 'None'
+[0.535s] colcon.colcon_core.verb Level 5 set package 'chess_coordinator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.535s] colcon.colcon_core.verb Level 5 set package 'chess_coordinator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.535s] colcon.colcon_core.verb Level 5 set package 'chess_coordinator' build argument 'cmake_clean_first' from command line to 'False'
+[0.535s] colcon.colcon_core.verb Level 5 set package 'chess_coordinator' build argument 'cmake_force_configure' from command line to 'False'
+[0.535s] colcon.colcon_core.verb Level 5 set package 'chess_coordinator' build argument 'ament_cmake_args' from command line to 'None'
+[0.535s] colcon.colcon_core.verb Level 5 set package 'chess_coordinator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.535s] colcon.colcon_core.verb Level 5 set package 'chess_coordinator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.535s] colcon.colcon_core.verb DEBUG Building package 'chess_coordinator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/aichess/build/chess_coordinator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/aichess/install/chess_coordinator', 'merge_install': False, 'path': '/home/jetson/aichess/src/chess_coordinator', 'symlink_install': False, 'test_result_base': None}
+[0.535s] colcon.colcon_core.executor INFO Executing jobs using 'parallel' executor
+[0.537s] colcon.colcon_parallel_executor.executor.parallel DEBUG run_until_complete
+[0.538s] colcon.colcon_ros.task.ament_cmake.build INFO Building ROS package in '/home/jetson/aichess/src/chess_coordinator' with build type 'ament_cmake'
+[0.538s] colcon.colcon_cmake.task.cmake.build INFO Building CMake package in '/home/jetson/aichess/src/chess_coordinator'
+[0.542s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.542s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.542s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[0.560s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/jetson/aichess/build/chess_coordinator': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:/home/jetson/dofbot_pro_ws/install/orbbec_description:/home/jetson/dofbot_pro_ws/install/orbbec_camera:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_moveit:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface:/home/jetson/dofbot_pro_ws/install/dofbot_pro_info:/home/jetson/dofbot_pro_ws/install/dofbot_pro_description:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/jetson/aichess/src/chess_coordinator -DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_coordinator
+[2.303s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/jetson/aichess/build/chess_coordinator' returned '1': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:/home/jetson/dofbot_pro_ws/install/orbbec_description:/home/jetson/dofbot_pro_ws/install/orbbec_camera:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_moveit:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface:/home/jetson/dofbot_pro_ws/install/dofbot_pro_info:/home/jetson/dofbot_pro_ws/install/dofbot_pro_description:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/jetson/aichess/src/chess_coordinator -DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_coordinator
+[2.322s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(chess_coordinator)
+[2.327s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_coordinator' for CMake module files
+[2.328s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_coordinator' for CMake config files
+[2.328s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_coordinator/bin'
+[2.328s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_coordinator/lib/pkgconfig/chess_coordinator.pc'
+[2.329s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_coordinator/lib/python3.10/site-packages'
+[2.329s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_coordinator/bin'
+[2.330s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/package.ps1'
+[2.331s] colcon.colcon_core.shell INFO Creating package descriptor '/home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/package.dsv'
+[2.332s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/package.sh'
+[2.333s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/package.bash'
+[2.334s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/package.zsh'
+[2.335s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/jetson/aichess/install/chess_coordinator/share/colcon-core/packages/chess_coordinator)
+[2.346s] colcon.colcon_parallel_executor.executor.parallel DEBUG closing loop
+[2.346s] colcon.colcon_parallel_executor.executor.parallel DEBUG loop closed
+[2.346s] colcon.colcon_parallel_executor.executor.parallel DEBUG run_until_complete finished with '1'
+[2.346s] colcon.colcon_core.event_reactor DEBUG joining thread
+[2.356s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.356s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.356s] colcon.colcon_notification.desktop_notification INFO Sending desktop notification using 'notify2'
+[2.372s] colcon.colcon_core.event_reactor DEBUG joined thread
+[2.373s] colcon.colcon_core.shell INFO Creating prefix script '/home/jetson/aichess/install/local_setup.ps1'
+[2.374s] colcon.colcon_core.shell INFO Creating prefix util module '/home/jetson/aichess/install/_local_setup_util_ps1.py'
+[2.377s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/jetson/aichess/install/setup.ps1'
+[2.380s] colcon.colcon_core.shell INFO Creating prefix script '/home/jetson/aichess/install/local_setup.sh'
+[2.380s] colcon.colcon_core.shell INFO Creating prefix util module '/home/jetson/aichess/install/_local_setup_util_sh.py'
+[2.381s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/jetson/aichess/install/setup.sh'
+[2.384s] colcon.colcon_core.shell INFO Creating prefix script '/home/jetson/aichess/install/local_setup.bash'
+[2.385s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/jetson/aichess/install/setup.bash'
+[2.387s] colcon.colcon_core.shell INFO Creating prefix script '/home/jetson/aichess/install/local_setup.zsh'
+[2.388s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/jetson/aichess/install/setup.zsh'

@@ -1,0 +1,7 @@
+setup.py
+chess_coordinator/__init__.py
+chess_coordinator/system_coordinator.py
+chess_coordinator.egg-info/PKG-INFO
+chess_coordinator.egg-info/SOURCES.txt
+chess_coordinator.egg-info/dependency_links.txt
+chess_coordinator.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+source;share/chess_coordinator/local_setup.bash
+source;share/chess_coordinator/local_setup.dsv
+source;share/chess_coordinator/local_setup.sh
+source;share/chess_coordinator/local_setup.zsh

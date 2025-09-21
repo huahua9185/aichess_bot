@@ -1,0 +1,42 @@
+Built target ament_cmake_python_copy_chess_coordinator
+running egg_info
+writing chess_coordinator.egg-info/PKG-INFO
+writing dependency_links to chess_coordinator.egg-info/dependency_links.txt
+writing top-level names to chess_coordinator.egg-info/top_level.txt
+reading manifest file 'chess_coordinator.egg-info/SOURCES.txt'
+writing manifest file 'chess_coordinator.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_chess_coordinator_egg
+-- Install configuration: ""
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/environment/pythonpath.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/environment/pythonpath.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator-0.0.1-py3.10.egg-info
+-- Installing: /home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator-0.0.1-py3.10.egg-info/top_level.txt
+-- Installing: /home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator-0.0.1-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator-0.0.1-py3.10.egg-info/PKG-INFO
+-- Installing: /home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator-0.0.1-py3.10.egg-info/dependency_links.txt
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator/__init__.py
+-- Installing: /home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator/system_coordinator.py
+Listing '/home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator'...
+Compiling '/home/jetson/aichess/install/chess_coordinator/local/lib/python3.10/dist-packages/chess_coordinator/system_coordinator.py'...
+-- Installing: /home/jetson/aichess/install/chess_coordinator/lib/chess_coordinator/system_coordinator.py
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/launch
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/launch/chess_basic_test.launch.py
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/config
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/resource
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/resource/chess_coordinator
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/ament_index/resource_index/package_run_dependencies/chess_coordinator
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/ament_index/resource_index/parent_prefix_path/chess_coordinator
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/environment/ament_prefix_path.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/environment/path.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/environment/path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/local_setup.bash
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/local_setup.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/local_setup.zsh
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/local_setup.dsv
+-- Installing: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/package.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/ament_index/resource_index/packages/chess_coordinator
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/cmake/chess_coordinatorConfig.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/cmake/chess_coordinatorConfig-version.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_coordinator/share/chess_coordinator/package.xml
