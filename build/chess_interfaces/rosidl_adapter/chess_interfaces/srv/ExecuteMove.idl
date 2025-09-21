@@ -1,0 +1,42 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from chess_interfaces/srv/ExecuteMove.srv
+// generated code does not contain a copyright notice
+
+#include "chess_interfaces/msg/ChessMove.idl"
+
+module chess_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "移动执行服务" "\n"
+      "执行已规划好的机械臂轨迹")
+    struct ExecuteMove_Request {
+      @verbatim (language="comment", text=
+        "请求" "\n"
+        "要执行的象棋移动")
+      chess_interfaces::msg::ChessMove chess_move;
+
+      @verbatim (language="comment", text=
+        "moveit_msgs/RobotTrajectory trajectory    # 要执行的轨迹" "\n"
+        "是否需要确认执行")
+      boolean confirm_execution;
+    };
+    struct ExecuteMove_Response {
+      @verbatim (language="comment", text=
+        "响应" "\n"
+        "执行是否成功")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "错误信息")
+      string error_message;
+
+      @verbatim (language="comment", text=
+        "实际执行时间")
+      float actual_execution_time;
+
+      @verbatim (language="comment", text=
+        "是否成功吃子")
+      boolean piece_captured;
+    };
+  };
+};

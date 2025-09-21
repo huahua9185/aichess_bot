@@ -1,0 +1,52 @@
+[0.019s] Invoking command in '/home/jetson/aichess/build/chess_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake /home/jetson/aichess/src/chess_description -DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_description
+[0.109s] -- The C compiler identification is GNU 11.4.0
+[0.192s] -- The CXX compiler identification is GNU 11.4.0
+[0.203s] -- Detecting C compiler ABI info
+[0.309s] -- Detecting C compiler ABI info - done
+[0.319s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.320s] -- Detecting C compile features
+[0.320s] -- Detecting C compile features - done
+[0.325s] -- Detecting CXX compiler ABI info
+[0.444s] -- Detecting CXX compiler ABI info - done
+[0.455s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.455s] -- Detecting CXX compile features
+[0.456s] -- Detecting CXX compile features - done
+[0.462s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.201s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.412s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[1.539s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.545s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.726s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.729s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.731s] -- Added test 'lint_cmake' to check CMake code style
+[1.732s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.734s] -- Added test 'xmllint' to check XML markup files
+[1.737s] -- Configuring done
+[1.743s] -- Generating done
+[1.746s] -- Build files have been written to: /home/jetson/aichess/build/chess_description
+[1.758s] Invoked command in '/home/jetson/aichess/build/chess_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake /home/jetson/aichess/src/chess_description -DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_description
+[1.760s] Invoking command in '/home/jetson/aichess/build/chess_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_description -- -j6 -l6
+[1.822s] Invoked command in '/home/jetson/aichess/build/chess_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_description -- -j6 -l6
+[1.837s] Invoking command in '/home/jetson/aichess/build/chess_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_description
+[1.851s] -- Install configuration: ""
+[1.851s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/urdf
+[1.851s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/urdf/dofbot_pro.urdf.xacro
+[1.851s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/meshes
+[1.851s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/config
+[1.852s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/config/dofbot_pro_controllers.yaml
+[1.852s] -- Installing: /home/jetson/aichess/install/chess_description/share/ament_index/resource_index/package_run_dependencies/chess_description
+[1.852s] -- Installing: /home/jetson/aichess/install/chess_description/share/ament_index/resource_index/parent_prefix_path/chess_description
+[1.852s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/environment/ament_prefix_path.sh
+[1.852s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/environment/ament_prefix_path.dsv
+[1.852s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/environment/path.sh
+[1.853s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/environment/path.dsv
+[1.853s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.bash
+[1.853s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.sh
+[1.853s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.zsh
+[1.853s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.dsv
+[1.854s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/package.dsv
+[1.854s] -- Installing: /home/jetson/aichess/install/chess_description/share/ament_index/resource_index/packages/chess_description
+[1.854s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/cmake/chess_descriptionConfig.cmake
+[1.854s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/cmake/chess_descriptionConfig-version.cmake
+[1.855s] -- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/package.xml
+[1.857s] Invoked command in '/home/jetson/aichess/build/chess_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_description

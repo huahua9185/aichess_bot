@@ -1,0 +1,35 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jetson/aichess/build/chess_description
+-- Install configuration: ""
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/urdf
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/urdf/dofbot_pro.urdf.xacro
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/meshes
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/config
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/config/dofbot_pro_controllers.yaml
+-- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/launch
+-- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/launch/dofbot_pro.launch.py
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/ament_index/resource_index/package_run_dependencies/chess_description
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/ament_index/resource_index/parent_prefix_path/chess_description
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/environment/ament_prefix_path.sh
+-- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/environment/path.sh
+-- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/environment/path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.bash
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.zsh
+-- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.dsv
+-- Installing: /home/jetson/aichess/install/chess_description/share/chess_description/package.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/ament_index/resource_index/packages/chess_description
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/cmake/chess_descriptionConfig.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/cmake/chess_descriptionConfig-version.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/package.xml

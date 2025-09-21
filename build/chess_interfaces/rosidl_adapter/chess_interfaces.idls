@@ -1,0 +1,6 @@
+/home/jetson/aichess/build/chess_interfaces/rosidl_adapter/chess_interfaces:msg/BoardState.idl
+/home/jetson/aichess/build/chess_interfaces/rosidl_adapter/chess_interfaces:msg/ChessMove.idl
+/home/jetson/aichess/build/chess_interfaces/rosidl_adapter/chess_interfaces:msg/PieceDetection.idl
+/home/jetson/aichess/build/chess_interfaces/rosidl_adapter/chess_interfaces:srv/DetectBoard.idl
+/home/jetson/aichess/build/chess_interfaces/rosidl_adapter/chess_interfaces:srv/PlanMove.idl
+/home/jetson/aichess/build/chess_interfaces/rosidl_adapter/chess_interfaces:srv/ExecuteMove.idl

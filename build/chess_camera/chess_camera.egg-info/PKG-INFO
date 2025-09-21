@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: chess_camera
+Version: 0.0.0
+Summary: 象棋机器人相机系统包
+Maintainer: jetson
+Maintainer-email: huahua9185@gmail.com
+License: MIT
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

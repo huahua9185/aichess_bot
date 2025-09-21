@@ -1,0 +1,26 @@
+-- Install configuration: ""
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/launch
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/launch/chess_world_with_robot.launch.py
+-- Installing: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/launch/gazebo_world.launch.py
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/config
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/worlds
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/worlds/chess_world.sdf
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/models
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/models/chess_piece
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/models/chess_piece/model.sdf
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/models/chess_piece/model.config
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/ament_index/resource_index/package_run_dependencies/chess_simulation
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/ament_index/resource_index/parent_prefix_path/chess_simulation
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/environment/ament_prefix_path.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/environment/path.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/environment/path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/local_setup.bash
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/local_setup.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/local_setup.zsh
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/local_setup.dsv
+-- Installing: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/ament_index/resource_index/packages/chess_simulation
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/cmake/chess_simulationConfig.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/cmake/chess_simulationConfig-version.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.xml

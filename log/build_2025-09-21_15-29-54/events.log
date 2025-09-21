@@ -1,0 +1,84 @@
+[0.000000] (-) TimerEvent: {}
+[0.000272] (-) JobUnselected: {'identifier': 'chess_camera'}
+[0.000667] (-) JobUnselected: {'identifier': 'chess_description'}
+[0.000896] (-) JobUnselected: {'identifier': 'chess_interfaces'}
+[0.001198] (chess_simulation) JobQueued: {'identifier': 'chess_simulation', 'dependencies': OrderedDict()}
+[0.001287] (chess_simulation) JobStarted: {'identifier': 'chess_simulation'}
+[0.017281] (chess_simulation) JobProgress: {'identifier': 'chess_simulation', 'progress': 'cmake'}
+[0.018157] (chess_simulation) Command: {'cmd': ['/usr/bin/cmake', '/home/jetson/aichess/src/chess_simulation', '-DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_simulation'], 'cwd': '/home/jetson/aichess/build/chess_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897'), ('no_proxy', 'localhost,127.0.0.1,192.168.1.0/24'), ('LANGUAGE', 'en_US:en'), ('USER', 'jetson'), ('SSH_CLIENT', '10.0.0.130 55030 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('LC_TIME', 'en_US.UTF-8'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/jetson'), ('OLDPWD', '/home/jetson'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.1.0/24'), ('SSH_TTY', '/dev/pts/3'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('https_proxy', 'http://127.0.0.1:7897'), ('COLCON_PREFIX_PATH', '/home/jetson/dofbot_pro_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (4GB ram)'), ('JETSON_SERIAL_NUMBER', '1421725053484'), ('http_proxy', 'http://127.0.0.1:7897'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE', 'delta'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/jetson/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('ROS_DOMAIN_ID', '98'), ('AMENT_PREFIX_PATH', '/home/jetson/dofbot_pro_ws/install/orbbec_description:/home/jetson/dofbot_pro_ws/install/orbbec_camera:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_moveit:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface:/home/jetson/dofbot_pro_ws/install/dofbot_pro_info:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_description:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/jetson/aichess/build/chess_simulation'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.130 55030 10.0.0.119 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:'), ('HTTP_PROXY', 'http://127.0.0.1:7897'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/jetson/dofbot_pro_ws/install/orbbec_description:/home/jetson/dofbot_pro_ws/install/orbbec_camera:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_moveit:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface:/home/jetson/dofbot_pro_ws/install/dofbot_pro_info:/home/jetson/dofbot_pro_ws/install/dofbot_pro_description:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0004')]), 'shell': False}
+[0.099464] (-) TimerEvent: {}
+[0.103082] (chess_simulation) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.185419] (chess_simulation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.196413] (chess_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199525] (-) TimerEvent: {}
+[0.299735] (-) TimerEvent: {}
+[0.301774] (chess_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.312202] (chess_simulation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.312588] (chess_simulation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.313169] (chess_simulation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.317819] (chess_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399867] (-) TimerEvent: {}
+[0.438248] (chess_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.449211] (chess_simulation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.449565] (chess_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.450225] (chess_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.456686] (chess_simulation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499978] (-) TimerEvent: {}
+[0.600255] (-) TimerEvent: {}
+[0.700538] (-) TimerEvent: {}
+[0.800821] (-) TimerEvent: {}
+[0.901119] (-) TimerEvent: {}
+[1.001418] (-) TimerEvent: {}
+[1.101692] (-) TimerEvent: {}
+[1.200594] (chess_simulation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.201758] (-) TimerEvent: {}
+[1.301940] (-) TimerEvent: {}
+[1.402228] (-) TimerEvent: {}
+[1.407901] (chess_simulation) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.502345] (-) TimerEvent: {}
+[1.504433] (chess_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.517305] (chess_simulation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.538780] (chess_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.564535] (chess_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.598563] (chess_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.602418] (-) TimerEvent: {}
+[1.695405] (chess_simulation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.702570] (-) TimerEvent: {}
+[1.703039] (chess_simulation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.802730] (-) TimerEvent: {}
+[1.854838] (chess_simulation) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.902896] (-) TimerEvent: {}
+[1.907304] (chess_simulation) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.986129] (chess_simulation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.002990] (-) TimerEvent: {}
+[2.012381] (chess_simulation) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.103141] (-) TimerEvent: {}
+[2.125536] (chess_simulation) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.126022] (chess_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.203272] (-) TimerEvent: {}
+[2.240618] (chess_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.242185] (chess_simulation) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.303418] (-) TimerEvent: {}
+[2.356859] (chess_simulation) StderrLine: {'line': b'CMake Error at CMakeLists.txt:11 (find_package):\n'}
+[2.357234] (chess_simulation) StderrLine: {'line': b'  By not providing "Findgazebo_ros_pkgs.cmake" in CMAKE_MODULE_PATH this\n'}
+[2.357369] (chess_simulation) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[2.357481] (chess_simulation) StderrLine: {'line': b'  "gazebo_ros_pkgs", but CMake did not find one.\n'}
+[2.357582] (chess_simulation) StderrLine: {'line': b'\n'}
+[2.357681] (chess_simulation) StderrLine: {'line': b'  Could not find a package configuration file provided by "gazebo_ros_pkgs"\n'}
+[2.357778] (chess_simulation) StderrLine: {'line': b'  with any of the following names:\n'}
+[2.357874] (chess_simulation) StderrLine: {'line': b'\n'}
+[2.357967] (chess_simulation) StderrLine: {'line': b'    gazebo_ros_pkgsConfig.cmake\n'}
+[2.358060] (chess_simulation) StderrLine: {'line': b'    gazebo_ros_pkgs-config.cmake\n'}
+[2.358154] (chess_simulation) StderrLine: {'line': b'\n'}
+[2.358245] (chess_simulation) StderrLine: {'line': b'  Add the installation prefix of "gazebo_ros_pkgs" to CMAKE_PREFIX_PATH or\n'}
+[2.358337] (chess_simulation) StderrLine: {'line': b'  set "gazebo_ros_pkgs_DIR" to a directory containing one of the above files.\n'}
+[2.358429] (chess_simulation) StderrLine: {'line': b'  If "gazebo_ros_pkgs" provides a separate development package or SDK, be\n'}
+[2.358521] (chess_simulation) StderrLine: {'line': b'  sure it has been installed.\n'}
+[2.358609] (chess_simulation) StderrLine: {'line': b'\n'}
+[2.358698] (chess_simulation) StderrLine: {'line': b'\n'}
+[2.358787] (chess_simulation) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.358924] (chess_simulation) StdoutLine: {'line': b'See also "/home/jetson/aichess/build/chess_simulation/CMakeFiles/CMakeOutput.log".\n'}
+[2.375418] (chess_simulation) CommandEnded: {'returncode': 1}
+[2.403515] (-) TimerEvent: {}
+[2.408582] (chess_simulation) JobEnded: {'identifier': 'chess_simulation', 'rc': 1}
+[2.419245] (-) EventReactorShutdown: {}

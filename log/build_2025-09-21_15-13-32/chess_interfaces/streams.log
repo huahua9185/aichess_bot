@@ -1,0 +1,411 @@
+[0.020s] Invoking command in '/home/jetson/aichess/build/chess_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake /home/jetson/aichess/src/chess_interfaces -DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_interfaces
+[0.105s] -- The C compiler identification is GNU 11.4.0
+[0.189s] -- The CXX compiler identification is GNU 11.4.0
+[0.199s] -- Detecting C compiler ABI info
+[0.308s] -- Detecting C compiler ABI info - done
+[0.319s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.319s] -- Detecting C compile features
+[0.320s] -- Detecting C compile features - done
+[0.325s] -- Detecting CXX compiler ABI info
+[0.444s] -- Detecting CXX compiler ABI info - done
+[0.455s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.455s] -- Detecting CXX compile features
+[0.455s] -- Detecting CXX compile features - done
+[0.463s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.196s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.407s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.506s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.519s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.538s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.564s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.600s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.698s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.705s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.864s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.918s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.001s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.025s] -- Looking for pthread.h
+[2.140s] -- Looking for pthread.h - found
+[2.140s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.253s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.254s] -- Found Threads: TRUE  
+[2.352s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.377s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.407s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.106s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.996s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.344s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.394s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.399s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.454s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.454s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.454s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.454s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[4.501s] -- Found PythonExtra: .so  
+[4.821s] -- Using numpy include directory: /home/jetson/.local/lib/python3.10/site-packages/numpy/core/include
+[4.858s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.906s] -- Added test 'lint_cmake' to check CMake code style
+[4.909s] -- Added test 'xmllint' to check XML markup files
+[4.915s] -- Configuring done
+[4.994s] -- Generating done
+[5.017s] -- Build files have been written to: /home/jetson/aichess/build/chess_interfaces
+[5.044s] Invoked command in '/home/jetson/aichess/build/chess_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake /home/jetson/aichess/src/chess_interfaces -DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_interfaces
+[5.047s] Invoking command in '/home/jetson/aichess/build/chess_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_interfaces -- -j6 -l6
+[5.122s] [  1%] Generating C code for ROS interfaces
+[5.135s] [  2%] Generating C++ code for ROS interfaces
+[5.151s] [  2%] Built target ament_cmake_python_copy_chess_interfaces
+[5.677s] running egg_info
+[5.728s] creating chess_interfaces.egg-info
+[5.729s] writing chess_interfaces.egg-info/PKG-INFO
+[5.729s] writing dependency_links to chess_interfaces.egg-info/dependency_links.txt
+[5.730s] writing top-level names to chess_interfaces.egg-info/top_level.txt
+[5.731s] writing manifest file 'chess_interfaces.egg-info/SOURCES.txt'
+[5.885s] reading manifest file 'chess_interfaces.egg-info/SOURCES.txt'
+[5.887s] writing manifest file 'chess_interfaces.egg-info/SOURCES.txt'
+[5.950s] [  2%] Built target ament_cmake_python_build_chess_interfaces_egg
+[7.137s] [  2%] Built target chess_interfaces__cpp
+[7.155s] [  7%] Generating C++ type support dispatch for ROS interfaces
+[7.155s] [  7%] Generating C++ type support for eProsima Fast-RTPS
+[7.155s] [  7%] Generating C++ introspection for ROS interfaces
+[7.172s] [  8%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_c.dir/rosidl_generator_c/chess_interfaces/msg/detail/board_state__functions.c.o
+[7.173s] [  9%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_c.dir/rosidl_generator_c/chess_interfaces/msg/detail/chess_move__functions.c.o
+[7.177s] [ 11%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_c.dir/rosidl_generator_c/chess_interfaces/msg/detail/piece_detection__functions.c.o
+[7.275s] [ 14%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_c.dir/rosidl_generator_c/chess_interfaces/srv/detail/plan_move__functions.c.o
+[7.275s] [ 14%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_c.dir/rosidl_generator_c/chess_interfaces/srv/detail/detect_board__functions.c.o
+[7.302s] [ 15%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_c.dir/rosidl_generator_c/chess_interfaces/srv/detail/execute_move__functions.c.o
+[7.449s] [ 16%] Linking C shared library libchess_interfaces__rosidl_generator_c.so
+[7.513s] [ 16%] Built target chess_interfaces__rosidl_generator_c
+[7.531s] [ 19%] Generating C type support for eProsima Fast-RTPS
+[7.531s] [ 19%] Generating C type support dispatch for ROS interfaces
+[7.543s] [ 21%] Generating C introspection for ROS interfaces
+[8.832s] [ 22%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/chess_interfaces/msg/board_state__type_support.cpp.o
+[9.014s] [ 23%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/chess_interfaces/msg/detail/board_state__type_support.cpp.o
+[9.183s] [ 25%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/board_state__type_support.cpp.o
+[9.258s] [ 26%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/chess_interfaces/msg/board_state__type_support.cpp.o
+[9.337s] [ 29%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/chess_interfaces/msg/chess_move__type_support.cpp.o
+[9.337s] [ 29%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/chess_interfaces/msg/chess_move__type_support.cpp.o
+[9.415s] [ 30%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/chess_interfaces/msg/piece_detection__type_support.cpp.o
+[9.492s] [ 32%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/chess_interfaces/srv/detect_board__type_support.cpp.o
+[9.544s] [ 33%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/chess_interfaces/msg/detail/board_state__type_support_c.cpp.o
+[9.654s] [ 35%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/chess_interfaces/srv/plan_move__type_support.cpp.o
+[9.830s] [ 36%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/chess_interfaces/srv/execute_move__type_support.cpp.o
+[9.865s] [ 38%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/chess_interfaces/msg/detail/chess_move__type_support.cpp.o
+[9.889s] [ 39%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/chess_interfaces/msg/piece_detection__type_support.cpp.o
+[9.904s] [ 40%] Linking CXX shared library libchess_interfaces__rosidl_typesupport_c.so
+[9.998s] [ 40%] Built target chess_interfaces__rosidl_typesupport_c
+[10.031s] [ 42%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/chess_move__type_support.cpp.o
+[10.039s] [ 43%] Building C object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/chess_interfaces/msg/detail/board_state__type_support.c.o
+[10.107s] [ 45%] Building C object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/chess_interfaces/msg/detail/chess_move__type_support.c.o
+[10.139s] [ 46%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/piece_detection__type_support.cpp.o
+[10.208s] [ 47%] Building C object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/chess_interfaces/msg/detail/piece_detection__type_support.c.o
+[10.211s] [ 49%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/chess_interfaces/msg/detail/chess_move__type_support_c.cpp.o
+[10.332s] [ 50%] Building C object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/chess_interfaces/srv/detail/detect_board__type_support.c.o
+[10.410s] [ 52%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/chess_interfaces/srv/detect_board__type_support.cpp.o
+[10.435s] [ 53%] Building C object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/chess_interfaces/srv/detail/plan_move__type_support.c.o
+[10.504s] [ 54%] Building C object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/chess_interfaces/srv/detail/execute_move__type_support.c.o
+[10.574s] [ 56%] Linking C shared library libchess_interfaces__rosidl_typesupport_introspection_c.so
+[10.627s] [ 57%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/chess_interfaces/msg/detail/piece_detection__type_support.cpp.o
+[10.631s] [ 57%] Built target chess_interfaces__rosidl_typesupport_introspection_c
+[10.652s] [ 59%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/chess_interfaces/msg/detail/piece_detection__type_support_c.cpp.o
+[10.870s] [ 60%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/chess_interfaces/srv/detail/detect_board__type_support_c.cpp.o
+[10.893s] [ 61%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/detect_board__type_support.cpp.o
+[10.975s] [ 63%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/plan_move__type_support.cpp.o
+[11.029s] [ 64%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/chess_interfaces/srv/plan_move__type_support.cpp.o
+[11.378s] [ 66%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/chess_interfaces/srv/detail/detect_board__type_support.cpp.o
+[11.507s] [ 67%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/chess_interfaces/srv/detail/plan_move__type_support_c.cpp.o
+[11.584s] [ 69%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/chess_interfaces/srv/execute_move__type_support.cpp.o
+[11.609s] [ 70%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/chess_interfaces/srv/detail/execute_move__type_support_c.cpp.o
+[11.791s] [ 71%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/execute_move__type_support.cpp.o
+[11.850s] [ 73%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/chess_interfaces/srv/detail/plan_move__type_support.cpp.o
+[12.117s] [ 74%] Linking CXX shared library libchess_interfaces__rosidl_typesupport_cpp.so
+[12.198s] [ 74%] Built target chess_interfaces__rosidl_typesupport_cpp
+[12.207s] [ 76%] Building CXX object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/chess_interfaces/srv/detail/execute_move__type_support.cpp.o
+[12.371s] [ 77%] Linking CXX shared library libchess_interfaces__rosidl_typesupport_fastrtps_c.so
+[12.497s] [ 77%] Built target chess_interfaces__rosidl_typesupport_fastrtps_c
+[12.590s] [ 78%] Linking CXX shared library libchess_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[12.706s] [ 78%] Built target chess_interfaces__rosidl_typesupport_fastrtps_cpp
+[12.907s] [ 80%] Linking CXX shared library libchess_interfaces__rosidl_typesupport_introspection_cpp.so
+[13.025s] [ 80%] Built target chess_interfaces__rosidl_typesupport_introspection_cpp
+[13.057s] [ 80%] Built target chess_interfaces
+[13.090s] [ 81%] Generating Python code for ROS interfaces
+[16.488s] [ 81%] Built target chess_interfaces__py
+[16.521s] [ 87%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_py.dir/rosidl_generator_py/chess_interfaces/srv/_detect_board_s.c.o
+[16.521s] [ 87%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_py.dir/rosidl_generator_py/chess_interfaces/msg/_board_state_s.c.o
+[16.521s] [ 87%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_py.dir/rosidl_generator_py/chess_interfaces/srv/_execute_move_s.c.o
+[16.523s] [ 87%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_py.dir/rosidl_generator_py/chess_interfaces/msg/_piece_detection_s.c.o
+[16.525s] [ 88%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_py.dir/rosidl_generator_py/chess_interfaces/srv/_plan_move_s.c.o
+[16.525s] [ 90%] Building C object CMakeFiles/chess_interfaces__rosidl_generator_py.dir/rosidl_generator_py/chess_interfaces/msg/_chess_move_s.c.o
+[16.761s] [ 91%] Linking C shared library rosidl_generator_py/chess_interfaces/libchess_interfaces__rosidl_generator_py.so
+[16.827s] [ 91%] Built target chess_interfaces__rosidl_generator_py
+[16.861s] [ 95%] Building C object CMakeFiles/chess_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/chess_interfaces/_chess_interfaces_s.ep.rosidl_typesupport_c.c.o
+[16.861s] [ 95%] Building C object CMakeFiles/chess_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/chess_interfaces/_chess_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o
+[16.861s] [ 95%] Building C object CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/chess_interfaces/_chess_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[17.080s] [100%] Linking C shared library rosidl_generator_py/chess_interfaces/chess_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[17.080s] [100%] Linking C shared library rosidl_generator_py/chess_interfaces/chess_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[17.080s] [100%] Linking C shared library rosidl_generator_py/chess_interfaces/chess_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[17.154s] [100%] Built target chess_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[17.155s] [100%] Built target chess_interfaces__rosidl_typesupport_introspection_c__pyext
+[17.155s] [100%] Built target chess_interfaces__rosidl_typesupport_c__pyext
+[17.175s] Invoked command in '/home/jetson/aichess/build/chess_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_interfaces -- -j6 -l6
+[17.191s] Invoking command in '/home/jetson/aichess/build/chess_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_interfaces
+[17.205s] -- Install configuration: ""
+[17.205s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/ament_index/resource_index/rosidl_interfaces/chess_interfaces
+[17.206s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces
+[17.206s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg
+[17.206s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/piece_detection.h
+[17.206s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/rosidl_generator_c__visibility_control.h
+[17.206s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/chess_move.h
+[17.207s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail
+[17.207s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__type_support.h
+[17.207s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__struct.h
+[17.207s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__type_support.h
+[17.207s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__type_support.h
+[17.208s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__functions.h
+[17.208s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__functions.c
+[17.208s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__functions.c
+[17.208s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__functions.h
+[17.208s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__functions.c
+[17.208s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__struct.h
+[17.209s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__functions.h
+[17.209s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__struct.h
+[17.209s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/board_state.h
+[17.209s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv
+[17.209s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/plan_move.h
+[17.210s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detect_board.h
+[17.210s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail
+[17.210s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__struct.h
+[17.210s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__struct.h
+[17.210s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__functions.c
+[17.210s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__type_support.h
+[17.210s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__struct.h
+[17.211s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__functions.c
+[17.211s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__type_support.h
+[17.211s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__functions.h
+[17.211s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__functions.c
+[17.211s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__functions.h
+[17.211s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__functions.h
+[17.212s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__type_support.h
+[17.212s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/execute_move.h
+[17.212s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/environment/library_path.sh
+[17.212s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/environment/library_path.dsv
+[17.213s] -- Installing: /home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_generator_c.so
+[17.213s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_generator_c.so" to ""
+[17.214s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces
+[17.214s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg
+[17.214s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[17.214s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail
+[17.214s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__rosidl_typesupport_fastrtps_c.h
+[17.215s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__rosidl_typesupport_fastrtps_c.h
+[17.215s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__rosidl_typesupport_fastrtps_c.h
+[17.215s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv
+[17.215s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail
+[17.215s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__rosidl_typesupport_fastrtps_c.h
+[17.215s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__rosidl_typesupport_fastrtps_c.h
+[17.215s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__rosidl_typesupport_fastrtps_c.h
+[17.216s] -- Installing: /home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_fastrtps_c.so
+[17.216s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[17.216s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces
+[17.216s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg
+[17.216s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/chess_move.hpp
+[17.216s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[17.217s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail
+[17.217s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__traits.hpp
+[17.217s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__builder.hpp
+[17.217s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__traits.hpp
+[17.217s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__struct.hpp
+[17.217s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__struct.hpp
+[17.217s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__traits.hpp
+[17.218s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__struct.hpp
+[17.218s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__builder.hpp
+[17.218s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__type_support.hpp
+[17.218s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__type_support.hpp
+[17.218s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__type_support.hpp
+[17.219s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__builder.hpp
+[17.219s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/piece_detection.hpp
+[17.219s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/board_state.hpp
+[17.219s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv
+[17.219s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/execute_move.hpp
+[17.219s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/plan_move.hpp
+[17.220s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detect_board.hpp
+[17.220s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail
+[17.220s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__builder.hpp
+[17.220s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__type_support.hpp
+[17.220s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__struct.hpp
+[17.220s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__traits.hpp
+[17.220s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__struct.hpp
+[17.221s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__type_support.hpp
+[17.221s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__type_support.hpp
+[17.221s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__struct.hpp
+[17.221s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__traits.hpp
+[17.221s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__builder.hpp
+[17.221s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__traits.hpp
+[17.222s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__builder.hpp
+[17.222s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces
+[17.222s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg
+[17.222s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[17.222s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail
+[17.223s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/dds_fastrtps
+[17.223s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__rosidl_typesupport_fastrtps_cpp.hpp
+[17.223s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[17.223s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__rosidl_typesupport_fastrtps_cpp.hpp
+[17.223s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv
+[17.223s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail
+[17.223s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/dds_fastrtps
+[17.223s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__rosidl_typesupport_fastrtps_cpp.hpp
+[17.224s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__rosidl_typesupport_fastrtps_cpp.hpp
+[17.224s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__rosidl_typesupport_fastrtps_cpp.hpp
+[17.224s] -- Installing: /home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[17.224s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[17.224s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces
+[17.225s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg
+[17.225s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.225s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail
+[17.225s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__rosidl_typesupport_introspection_c.h
+[17.225s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__rosidl_typesupport_introspection_c.h
+[17.225s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__type_support.c
+[17.226s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__rosidl_typesupport_introspection_c.h
+[17.226s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__type_support.c
+[17.226s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__type_support.c
+[17.226s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv
+[17.226s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail
+[17.226s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__rosidl_typesupport_introspection_c.h
+[17.226s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__type_support.c
+[17.227s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__type_support.c
+[17.227s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__type_support.c
+[17.227s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__rosidl_typesupport_introspection_c.h
+[17.227s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__rosidl_typesupport_introspection_c.h
+[17.227s] -- Installing: /home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_introspection_c.so
+[17.227s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[17.227s] -- Installing: /home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_c.so
+[17.228s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_c.so" to ""
+[17.228s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces
+[17.228s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg
+[17.229s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail
+[17.229s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__rosidl_typesupport_introspection_cpp.hpp
+[17.229s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__type_support.cpp
+[17.229s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__type_support.cpp
+[17.229s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/chess_move__type_support.cpp
+[17.230s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/board_state__rosidl_typesupport_introspection_cpp.hpp
+[17.230s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/msg/detail/piece_detection__rosidl_typesupport_introspection_cpp.hpp
+[17.230s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv
+[17.230s] -- Up-to-date: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail
+[17.230s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__rosidl_typesupport_introspection_cpp.hpp
+[17.230s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__rosidl_typesupport_introspection_cpp.hpp
+[17.230s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/detect_board__type_support.cpp
+[17.231s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__rosidl_typesupport_introspection_cpp.hpp
+[17.231s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/plan_move__type_support.cpp
+[17.231s] -- Installing: /home/jetson/aichess/install/chess_interfaces/include/chess_interfaces/chess_interfaces/srv/detail/execute_move__type_support.cpp
+[17.231s] -- Installing: /home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_introspection_cpp.so
+[17.231s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[17.231s] -- Installing: /home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_cpp.so
+[17.232s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_typesupport_cpp.so" to ""
+[17.232s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/environment/pythonpath.sh
+[17.232s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/environment/pythonpath.dsv
+[17.232s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces-0.0.0-py3.10.egg-info
+[17.233s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[17.233s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[17.233s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[17.233s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[17.233s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces
+[17.234s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/_chess_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[17.234s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/chess_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[17.234s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/chess_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[17.234s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/libchess_interfaces__rosidl_generator_py.so
+[17.234s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/__init__.py
+[17.235s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/_chess_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[17.235s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg
+[17.235s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/_chess_move_s.c
+[17.235s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/_piece_detection.py
+[17.235s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/_board_state.py
+[17.236s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/__init__.py
+[17.236s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/_piece_detection_s.c
+[17.236s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/_board_state_s.c
+[17.236s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/_chess_move.py
+[17.236s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/_chess_interfaces_s.ep.rosidl_typesupport_c.c
+[17.237s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv
+[17.237s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/_execute_move_s.c
+[17.237s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/_execute_move.py
+[17.237s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/__init__.py
+[17.237s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/_plan_move_s.c
+[17.237s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/_detect_board.py
+[17.238s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/_detect_board_s.c
+[17.238s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/_plan_move.py
+[17.238s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/chess_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[17.327s] Listing '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces'...
+[17.328s] Compiling '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/__init__.py'...
+[17.328s] Listing '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg'...
+[17.328s] Compiling '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/__init__.py'...
+[17.328s] Compiling '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/_board_state.py'...
+[17.328s] Compiling '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/_chess_move.py'...
+[17.328s] Compiling '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/msg/_piece_detection.py'...
+[17.328s] Listing '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv'...
+[17.328s] Compiling '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/__init__.py'...
+[17.329s] Compiling '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/_detect_board.py'...
+[17.329s] Compiling '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/_execute_move.py'...
+[17.329s] Compiling '/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/srv/_plan_move.py'...
+[17.338s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/chess_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[17.339s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/chess_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[17.339s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/chess_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[17.340s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/chess_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[17.340s] -- Installing: /home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/chess_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[17.340s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages/chess_interfaces/chess_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[17.341s] -- Installing: /home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_generator_py.so
+[17.341s] -- Set runtime path of "/home/jetson/aichess/install/chess_interfaces/lib/libchess_interfaces__rosidl_generator_py.so" to ""
+[17.341s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/msg/BoardState.idl
+[17.341s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/msg/ChessMove.idl
+[17.342s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/msg/PieceDetection.idl
+[17.342s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/DetectBoard.idl
+[17.342s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/PlanMove.idl
+[17.342s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/ExecuteMove.idl
+[17.343s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/msg/BoardState.msg
+[17.343s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/msg/ChessMove.msg
+[17.343s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/msg/PieceDetection.msg
+[17.343s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/DetectBoard.srv
+[17.343s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/DetectBoard_Request.msg
+[17.344s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/DetectBoard_Response.msg
+[17.344s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/PlanMove.srv
+[17.344s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/PlanMove_Request.msg
+[17.344s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/PlanMove_Response.msg
+[17.344s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/ExecuteMove.srv
+[17.345s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/ExecuteMove_Request.msg
+[17.345s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/srv/ExecuteMove_Response.msg
+[17.345s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/ament_index/resource_index/package_run_dependencies/chess_interfaces
+[17.345s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/ament_index/resource_index/parent_prefix_path/chess_interfaces
+[17.346s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/environment/ament_prefix_path.sh
+[17.346s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/environment/ament_prefix_path.dsv
+[17.346s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/environment/path.sh
+[17.347s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/environment/path.dsv
+[17.347s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/local_setup.bash
+[17.347s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/local_setup.sh
+[17.347s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/local_setup.zsh
+[17.347s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/local_setup.dsv
+[17.348s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.dsv
+[17.348s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/ament_index/resource_index/packages/chess_interfaces
+[17.348s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/export_chess_interfaces__rosidl_generator_cExport.cmake
+[17.348s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/export_chess_interfaces__rosidl_generator_cExport-noconfig.cmake
+[17.349s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/export_chess_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[17.349s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/export_chess_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[17.349s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/export_chess_interfaces__rosidl_generator_cppExport.cmake
+[17.349s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/export_chess_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[17.349s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/export_chess_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[17.350s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[17.350s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.350s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfaces__rosidl_typesupport_cExport.cmake
+[17.350s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[17.351s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[17.351s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.351s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfaces__rosidl_typesupport_cppExport.cmake
+[17.351s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[17.352s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/export_chess_interfaces__rosidl_generator_pyExport.cmake
+[17.352s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/export_chess_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[17.352s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/rosidl_cmake-extras.cmake
+[17.352s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.353s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.353s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[17.353s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[17.353s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[17.353s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[17.354s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfacesConfig.cmake
+[17.354s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/cmake/chess_interfacesConfig-version.cmake
+[17.354s] -- Installing: /home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.xml
+[17.358s] Invoked command in '/home/jetson/aichess/build/chess_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_interfaces

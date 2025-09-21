@@ -1,0 +1,33 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/board_state__type_support.cpp.o"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/board_state__type_support.cpp.o.d"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/chess_move__type_support.cpp.o"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/chess_move__type_support.cpp.o.d"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/piece_detection__type_support.cpp.o"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/piece_detection__type_support.cpp.o.d"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/detect_board__type_support.cpp.o"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/detect_board__type_support.cpp.o.d"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/execute_move__type_support.cpp.o"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/execute_move__type_support.cpp.o.d"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/plan_move__type_support.cpp.o"
+  "CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/plan_move__type_support.cpp.o.d"
+  "libchess_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libchess_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/board_state__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/chess_move__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/board_state__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/chess_move__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/dds_fastrtps/piece_detection__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/msg/detail/piece_detection__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/detect_board__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/execute_move__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/dds_fastrtps/plan_move__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/detect_board__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/execute_move__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/chess_interfaces/srv/detail/plan_move__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/chess_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

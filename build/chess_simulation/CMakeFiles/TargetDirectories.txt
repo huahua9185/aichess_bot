@@ -1,0 +1,9 @@
+/home/jetson/aichess/build/chess_simulation/CMakeFiles/uninstall.dir
+/home/jetson/aichess/build/chess_simulation/CMakeFiles/chess_simulation_uninstall.dir
+/home/jetson/aichess/build/chess_simulation/CMakeFiles/test.dir
+/home/jetson/aichess/build/chess_simulation/CMakeFiles/edit_cache.dir
+/home/jetson/aichess/build/chess_simulation/CMakeFiles/rebuild_cache.dir
+/home/jetson/aichess/build/chess_simulation/CMakeFiles/list_install_components.dir
+/home/jetson/aichess/build/chess_simulation/CMakeFiles/install.dir
+/home/jetson/aichess/build/chess_simulation/CMakeFiles/install/local.dir
+/home/jetson/aichess/build/chess_simulation/CMakeFiles/install/strip.dir

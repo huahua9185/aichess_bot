@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from chess_interfaces/srv/PlanMove.srv
+// generated code does not contain a copyright notice
+
+#include "chess_interfaces/msg/ChessMove.idl"
+
+module chess_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "运动规划服务" "\n"
+      "为指定的象棋移动规划机械臂轨迹")
+    struct PlanMove_Request {
+      @verbatim (language="comment", text=
+        "请求" "\n"
+        "要执行的象棋移动")
+      chess_interfaces::msg::ChessMove chess_move;
+
+      @verbatim (language="comment", text=
+        "速度系数 (0.1-1.0)")
+      float speed_factor;
+
+      @verbatim (language="comment", text=
+        "是否避开其他棋子")
+      boolean avoid_pieces;
+
+      @verbatim (language="comment", text=
+        "是否使用安全接近路径")
+      boolean use_safe_approach;
+    };
+    struct PlanMove_Response {
+      @verbatim (language="comment", text=
+        "响应" "\n"
+        "规划是否成功")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "错误信息")
+      string error_message;
+
+      @verbatim (language="comment", text=
+        "moveit_msgs/RobotTrajectory trajectory    # 规划的轨迹" "\n"
+        "预计执行时间")
+      float execution_time;
+    };
+  };
+};

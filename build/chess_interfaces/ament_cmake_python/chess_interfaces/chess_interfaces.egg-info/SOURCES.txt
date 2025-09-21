@@ -1,0 +1,14 @@
+setup.py
+chess_interfaces/__init__.py
+chess_interfaces.egg-info/PKG-INFO
+chess_interfaces.egg-info/SOURCES.txt
+chess_interfaces.egg-info/dependency_links.txt
+chess_interfaces.egg-info/top_level.txt
+chess_interfaces/msg/__init__.py
+chess_interfaces/msg/_board_state.py
+chess_interfaces/msg/_chess_move.py
+chess_interfaces/msg/_piece_detection.py
+chess_interfaces/srv/__init__.py
+chess_interfaces/srv/_detect_board.py
+chess_interfaces/srv/_execute_move.py
+chess_interfaces/srv/_plan_move.py

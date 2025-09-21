@@ -1,0 +1,11 @@
+{
+  "package_name": "chess_interfaces",
+  "non_idl_tuples": [
+    "/home/jetson/aichess/src/chess_interfaces:msg/BoardState.msg",
+    "/home/jetson/aichess/src/chess_interfaces:msg/ChessMove.msg",
+    "/home/jetson/aichess/src/chess_interfaces:msg/PieceDetection.msg",
+    "/home/jetson/aichess/src/chess_interfaces:srv/DetectBoard.srv",
+    "/home/jetson/aichess/src/chess_interfaces:srv/PlanMove.srv",
+    "/home/jetson/aichess/src/chess_interfaces:srv/ExecuteMove.srv"
+  ]
+}

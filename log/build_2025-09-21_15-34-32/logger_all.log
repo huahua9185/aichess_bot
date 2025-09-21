@@ -1,0 +1,323 @@
+[0.247s] colcon DEBUG Command line arguments: ['/usr/bin/colcon', 'build']
+[0.247s] colcon DEBUG Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff89e97970>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff89e97430>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff89e97430>>, mixin_verb=('build',))
+[0.322s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) check parameters
+[0.322s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) check parameters
+[0.323s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) check parameters
+[0.323s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) check parameters
+[0.323s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) discover
+[0.323s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) discover
+[0.323s] colcon.colcon_core.package_discovery INFO Crawling recursively for packages in '/home/jetson/aichess'
+[0.323s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore'
+[0.324s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ignore_ament_install'
+[0.324s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_pkg']
+[0.324s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_pkg'
+[0.324s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['colcon_meta']
+[0.324s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'colcon_meta'
+[0.324s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['ros']
+[0.324s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'ros'
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['cmake', 'python']
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'cmake'
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python'
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(.) by extensions ['python_setup_py']
+[0.351s] colcon.colcon_core.package_identification Level 1 _identify(.) by extension 'python_setup_py'
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(build) by extension 'ignore'
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(build) ignored
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'ignore'
+[0.352s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'ignore_ament_install'
+[0.353s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extensions ['colcon_pkg']
+[0.353s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'colcon_pkg'
+[0.353s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extensions ['colcon_meta']
+[0.353s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'colcon_meta'
+[0.353s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extensions ['ros']
+[0.353s] colcon.colcon_core.package_identification Level 1 _identify(chess_camera) by extension 'ros'
+[0.357s] colcon.colcon_core.package_identification DEBUG Package 'chess_camera' with type 'ros.ament_python' and name 'chess_camera'
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(install) by extension 'ignore'
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(install) ignored
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] colcon.colcon_core.package_identification Level 1 _identify(log) by extension 'ignore'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(log) ignored
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ignore_ament_install'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_pkg']
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_pkg'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['colcon_meta']
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'colcon_meta'
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['ros']
+[0.359s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'ros'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['cmake', 'python']
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'cmake'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src) by extensions ['python_setup_py']
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src) by extension 'python_setup_py'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'ignore'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'ignore_ament_install'
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extensions ['colcon_pkg']
+[0.360s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'colcon_pkg'
+[0.361s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extensions ['colcon_meta']
+[0.361s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'colcon_meta'
+[0.361s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extensions ['ros']
+[0.361s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_description) by extension 'ros'
+[0.362s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_description' with type 'ros.ament_cmake' and name 'chess_description'
+[0.362s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'ignore'
+[0.362s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'ignore_ament_install'
+[0.363s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extensions ['colcon_pkg']
+[0.363s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'colcon_pkg'
+[0.363s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extensions ['colcon_meta']
+[0.363s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'colcon_meta'
+[0.363s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extensions ['ros']
+[0.363s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_interfaces) by extension 'ros'
+[0.364s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_interfaces' with type 'ros.ament_cmake' and name 'chess_interfaces'
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'ignore'
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'ignore_ament_install'
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extensions ['colcon_pkg']
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'colcon_pkg'
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extensions ['colcon_meta']
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'colcon_meta'
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extensions ['ros']
+[0.365s] colcon.colcon_core.package_identification Level 1 _identify(src/chess_simulation) by extension 'ros'
+[0.367s] colcon.colcon_core.package_identification DEBUG Package 'src/chess_simulation' with type 'ros.ament_cmake' and name 'chess_simulation'
+[0.367s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) using defaults
+[0.367s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) discover
+[0.367s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) using defaults
+[0.367s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) discover
+[0.367s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) using defaults
+[0.397s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) check parameters
+[0.397s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) discover
+[0.402s] colcon.colcon_installed_package_information.package_discovery DEBUG Found 17 installed packages in /home/jetson/dofbot_pro_ws/install
+[0.405s] colcon.colcon_installed_package_information.package_discovery DEBUG Found 407 installed packages in /opt/ros/humble
+[0.409s] colcon.colcon_core.package_discovery Level 1 discover_packages(prefix_path) using defaults
+[0.523s] colcon.colcon_core.verb Level 5 set package 'chess_description' build argument 'cmake_args' from command line to 'None'
+[0.523s] colcon.colcon_core.verb Level 5 set package 'chess_description' build argument 'cmake_target' from command line to 'None'
+[0.524s] colcon.colcon_core.verb Level 5 set package 'chess_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.524s] colcon.colcon_core.verb Level 5 set package 'chess_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.524s] colcon.colcon_core.verb Level 5 set package 'chess_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.524s] colcon.colcon_core.verb Level 5 set package 'chess_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.524s] colcon.colcon_core.verb Level 5 set package 'chess_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.524s] colcon.colcon_core.verb Level 5 set package 'chess_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.524s] colcon.colcon_core.verb Level 5 set package 'chess_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.524s] colcon.colcon_core.verb DEBUG Building package 'chess_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/aichess/build/chess_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/aichess/install/chess_description', 'merge_install': False, 'path': '/home/jetson/aichess/src/chess_description', 'symlink_install': False, 'test_result_base': None}
+[0.525s] colcon.colcon_core.verb Level 5 set package 'chess_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.525s] colcon.colcon_core.verb Level 5 set package 'chess_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.525s] colcon.colcon_core.verb Level 5 set package 'chess_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.525s] colcon.colcon_core.verb Level 5 set package 'chess_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.525s] colcon.colcon_core.verb Level 5 set package 'chess_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.525s] colcon.colcon_core.verb Level 5 set package 'chess_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.525s] colcon.colcon_core.verb Level 5 set package 'chess_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.525s] colcon.colcon_core.verb Level 5 set package 'chess_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.525s] colcon.colcon_core.verb Level 5 set package 'chess_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.525s] colcon.colcon_core.verb DEBUG Building package 'chess_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/aichess/build/chess_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/aichess/install/chess_interfaces', 'merge_install': False, 'path': '/home/jetson/aichess/src/chess_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.526s] colcon.colcon_core.verb Level 5 set package 'chess_simulation' build argument 'cmake_args' from command line to 'None'
+[0.526s] colcon.colcon_core.verb Level 5 set package 'chess_simulation' build argument 'cmake_target' from command line to 'None'
+[0.526s] colcon.colcon_core.verb Level 5 set package 'chess_simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.526s] colcon.colcon_core.verb Level 5 set package 'chess_simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.526s] colcon.colcon_core.verb Level 5 set package 'chess_simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.526s] colcon.colcon_core.verb Level 5 set package 'chess_simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.526s] colcon.colcon_core.verb Level 5 set package 'chess_simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.526s] colcon.colcon_core.verb Level 5 set package 'chess_simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.526s] colcon.colcon_core.verb Level 5 set package 'chess_simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.526s] colcon.colcon_core.verb DEBUG Building package 'chess_simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/aichess/build/chess_simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/aichess/install/chess_simulation', 'merge_install': False, 'path': '/home/jetson/aichess/src/chess_simulation', 'symlink_install': False, 'test_result_base': None}
+[0.527s] colcon.colcon_core.verb Level 5 set package 'chess_camera' build argument 'cmake_args' from command line to 'None'
+[0.527s] colcon.colcon_core.verb Level 5 set package 'chess_camera' build argument 'cmake_target' from command line to 'None'
+[0.527s] colcon.colcon_core.verb Level 5 set package 'chess_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.527s] colcon.colcon_core.verb Level 5 set package 'chess_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.527s] colcon.colcon_core.verb Level 5 set package 'chess_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.527s] colcon.colcon_core.verb Level 5 set package 'chess_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.527s] colcon.colcon_core.verb Level 5 set package 'chess_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.527s] colcon.colcon_core.verb Level 5 set package 'chess_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.527s] colcon.colcon_core.verb Level 5 set package 'chess_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.527s] colcon.colcon_core.verb DEBUG Building package 'chess_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetson/aichess/build/chess_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetson/aichess/install/chess_camera', 'merge_install': False, 'path': '/home/jetson/aichess/chess_camera', 'symlink_install': False, 'test_result_base': None}
+[0.527s] colcon.colcon_core.executor INFO Executing jobs using 'parallel' executor
+[0.529s] colcon.colcon_parallel_executor.executor.parallel DEBUG run_until_complete
+[0.530s] colcon.colcon_ros.task.ament_cmake.build INFO Building ROS package in '/home/jetson/aichess/src/chess_interfaces' with build type 'ament_cmake'
+[0.530s] colcon.colcon_cmake.task.cmake.build INFO Building CMake package in '/home/jetson/aichess/src/chess_interfaces'
+[0.534s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.534s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.534s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[0.543s] colcon.colcon_ros.task.ament_cmake.build INFO Building ROS package in '/home/jetson/aichess/src/chess_description' with build type 'ament_cmake'
+[0.543s] colcon.colcon_cmake.task.cmake.build INFO Building CMake package in '/home/jetson/aichess/src/chess_description'
+[0.543s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.543s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[0.551s] colcon.colcon_ros.task.ament_cmake.build INFO Building ROS package in '/home/jetson/aichess/src/chess_simulation' with build type 'ament_cmake'
+[0.551s] colcon.colcon_cmake.task.cmake.build INFO Building CMake package in '/home/jetson/aichess/src/chess_simulation'
+[0.552s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.552s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[0.567s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/jetson/aichess/build/chess_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_interfaces -- -j6 -l6
+[0.572s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/jetson/aichess/build/chess_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_description -- -j6 -l6
+[0.576s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/jetson/aichess/build/chess_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_simulation -- -j6 -l6
+[0.635s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/jetson/aichess/build/chess_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_description -- -j6 -l6
+[0.652s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/jetson/aichess/build/chess_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_description
+[0.661s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/jetson/aichess/build/chess_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_simulation -- -j6 -l6
+[0.663s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/jetson/aichess/build/chess_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_simulation
+[0.668s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(chess_description)
+[0.673s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/jetson/aichess/build/chess_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_description
+[0.676s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description' for CMake module files
+[0.677s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description' for CMake config files
+[0.677s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_description', 'cmake_prefix_path')
+[0.678s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_description/share/chess_description/hook/cmake_prefix_path.ps1'
+[0.679s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_description/share/chess_description/hook/cmake_prefix_path.dsv'
+[0.680s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_description/share/chess_description/hook/cmake_prefix_path.sh'
+[0.682s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description/bin'
+[0.682s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description/lib/pkgconfig/chess_description.pc'
+[0.682s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description/lib/python3.10/site-packages'
+[0.683s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description/bin'
+[0.684s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_description/share/chess_description/package.ps1'
+[0.686s] colcon.colcon_core.shell INFO Creating package descriptor '/home/jetson/aichess/install/chess_description/share/chess_description/package.dsv'
+[0.687s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_description/share/chess_description/package.sh'
+[0.688s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_description/share/chess_description/package.bash'
+[0.690s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_description/share/chess_description/package.zsh'
+[0.692s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/jetson/aichess/install/chess_description/share/colcon-core/packages/chess_description)
+[0.693s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(chess_description)
+[0.694s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description' for CMake module files
+[0.694s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description' for CMake config files
+[0.695s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_description', 'cmake_prefix_path')
+[0.695s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_description/share/chess_description/hook/cmake_prefix_path.ps1'
+[0.698s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_description/share/chess_description/hook/cmake_prefix_path.dsv'
+[0.699s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_description/share/chess_description/hook/cmake_prefix_path.sh'
+[0.700s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description/bin'
+[0.700s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description/lib/pkgconfig/chess_description.pc'
+[0.700s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description/lib/python3.10/site-packages'
+[0.701s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_description/bin'
+[0.702s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_description/share/chess_description/package.ps1'
+[0.703s] colcon.colcon_core.shell INFO Creating package descriptor '/home/jetson/aichess/install/chess_description/share/chess_description/package.dsv'
+[0.704s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_description/share/chess_description/package.sh'
+[0.704s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_description/share/chess_description/package.bash'
+[0.705s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_description/share/chess_description/package.zsh'
+[0.706s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/jetson/aichess/install/chess_description/share/colcon-core/packages/chess_description)
+[0.712s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(chess_simulation)
+[0.713s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation' for CMake module files
+[0.713s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation' for CMake config files
+[0.714s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_simulation', 'cmake_prefix_path')
+[0.714s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/hook/cmake_prefix_path.ps1'
+[0.719s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/jetson/aichess/build/chess_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_simulation
+[0.719s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/hook/cmake_prefix_path.dsv'
+[0.720s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/hook/cmake_prefix_path.sh'
+[0.721s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation/bin'
+[0.721s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation/lib/pkgconfig/chess_simulation.pc'
+[0.722s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation/lib/python3.10/site-packages'
+[0.722s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation/bin'
+[0.723s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.ps1'
+[0.724s] colcon.colcon_core.shell INFO Creating package descriptor '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.dsv'
+[0.724s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.sh'
+[0.725s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.bash'
+[0.726s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.zsh'
+[0.727s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/jetson/aichess/install/chess_simulation/share/colcon-core/packages/chess_simulation)
+[0.728s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(chess_simulation)
+[0.728s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation' for CMake module files
+[0.729s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation' for CMake config files
+[0.730s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_simulation', 'cmake_prefix_path')
+[0.730s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/hook/cmake_prefix_path.ps1'
+[0.731s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/hook/cmake_prefix_path.dsv'
+[0.732s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/hook/cmake_prefix_path.sh'
+[0.733s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation/bin'
+[0.733s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation/lib/pkgconfig/chess_simulation.pc'
+[0.733s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation/lib/python3.10/site-packages'
+[0.733s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_simulation/bin'
+[0.734s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.ps1'
+[0.735s] colcon.colcon_core.shell INFO Creating package descriptor '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.dsv'
+[0.736s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.sh'
+[0.737s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.bash'
+[0.738s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_simulation/share/chess_simulation/package.zsh'
+[0.739s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/jetson/aichess/install/chess_simulation/share/colcon-core/packages/chess_simulation)
+[1.527s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/jetson/aichess/build/chess_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --build /home/jetson/aichess/build/chess_interfaces -- -j6 -l6
+[1.529s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/jetson/aichess/build/chess_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_interfaces
+[1.654s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(chess_interfaces)
+[1.654s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces' for CMake module files
+[1.655s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/jetson/aichess/build/chess_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake --install /home/jetson/aichess/build/chess_interfaces
+[1.656s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces' for CMake config files
+[1.657s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_interfaces', 'cmake_prefix_path')
+[1.658s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/cmake_prefix_path.ps1'
+[1.659s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/cmake_prefix_path.dsv'
+[1.659s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/cmake_prefix_path.sh'
+[1.660s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/lib'
+[1.661s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_interfaces', 'ld_library_path_lib')
+[1.661s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/ld_library_path_lib.ps1'
+[1.662s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/ld_library_path_lib.dsv'
+[1.662s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/ld_library_path_lib.sh'
+[1.663s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/bin'
+[1.663s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/lib/pkgconfig/chess_interfaces.pc'
+[1.663s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/lib/python3.10/site-packages'
+[1.664s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/bin'
+[1.664s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.ps1'
+[1.665s] colcon.colcon_core.shell INFO Creating package descriptor '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.dsv'
+[1.666s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.sh'
+[1.667s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.bash'
+[1.667s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.zsh'
+[1.668s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/jetson/aichess/install/chess_interfaces/share/colcon-core/packages/chess_interfaces)
+[1.669s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(chess_interfaces)
+[1.669s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces' for CMake module files
+[1.670s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces' for CMake config files
+[1.671s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_interfaces', 'cmake_prefix_path')
+[1.671s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/cmake_prefix_path.ps1'
+[1.672s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/cmake_prefix_path.dsv'
+[1.673s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/cmake_prefix_path.sh'
+[1.674s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/lib'
+[1.674s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_interfaces', 'ld_library_path_lib')
+[1.674s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/ld_library_path_lib.ps1'
+[1.675s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/ld_library_path_lib.dsv'
+[1.675s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/hook/ld_library_path_lib.sh'
+[1.676s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/bin'
+[1.676s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/lib/pkgconfig/chess_interfaces.pc'
+[1.676s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/lib/python3.10/site-packages'
+[1.677s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_interfaces/bin'
+[1.677s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.ps1'
+[1.679s] colcon.colcon_core.shell INFO Creating package descriptor '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.dsv'
+[1.680s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.sh'
+[1.680s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.bash'
+[1.681s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_interfaces/share/chess_interfaces/package.zsh'
+[1.682s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/jetson/aichess/install/chess_interfaces/share/colcon-core/packages/chess_interfaces)
+[1.682s] colcon.colcon_ros.task.ament_python.build INFO Building ROS package in '/home/jetson/aichess/chess_camera' with build type 'ament_python'
+[1.683s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_camera', 'ament_prefix_path')
+[1.683s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_camera/share/chess_camera/hook/ament_prefix_path.ps1'
+[1.684s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_camera/share/chess_camera/hook/ament_prefix_path.dsv'
+[1.685s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_camera/share/chess_camera/hook/ament_prefix_path.sh'
+[1.686s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.686s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[2.201s] colcon.colcon_core.task.python.build INFO Building Python package in '/home/jetson/aichess/chess_camera'
+[2.202s] colcon.colcon_core.shell INFO Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.202s] colcon.colcon_core.shell DEBUG Skip shell extension 'dsv' for command environment
+[3.281s] colcon.colcon_core.event_handler.log_command DEBUG Invoking command in '/home/jetson/aichess/chess_camera': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/build/chess_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages:/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/chess_camera build --build-base /home/jetson/aichess/build/chess_camera/build install --record /home/jetson/aichess/build/chess_camera/install.log --single-version-externally-managed install_data
+[4.389s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_camera' for CMake module files
+[4.390s] colcon.colcon_core.event_handler.log_command DEBUG Invoked command in '/home/jetson/aichess/chess_camera' returned '0': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/build/chess_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages:/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/chess_camera build --build-base /home/jetson/aichess/build/chess_camera/build install --record /home/jetson/aichess/build/chess_camera/install.log --single-version-externally-managed install_data
+[4.390s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_camera' for CMake config files
+[4.392s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_camera/lib'
+[4.392s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_camera/bin'
+[4.392s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_camera/lib/pkgconfig/chess_camera.pc'
+[4.392s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages'
+[4.393s] colcon.colcon_core.shell Level 1 create_environment_hook('chess_camera', 'pythonpath')
+[4.393s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_camera/share/chess_camera/hook/pythonpath.ps1'
+[4.394s] colcon.colcon_core.shell INFO Creating environment descriptor '/home/jetson/aichess/install/chess_camera/share/chess_camera/hook/pythonpath.dsv'
+[4.395s] colcon.colcon_core.shell INFO Creating environment hook '/home/jetson/aichess/install/chess_camera/share/chess_camera/hook/pythonpath.sh'
+[4.396s] colcon.colcon_core.environment Level 1 checking '/home/jetson/aichess/install/chess_camera/bin'
+[4.396s] colcon.colcon_core.environment Level 1 create_environment_scripts_only(chess_camera)
+[4.396s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_camera/share/chess_camera/package.ps1'
+[4.397s] colcon.colcon_core.shell INFO Creating package descriptor '/home/jetson/aichess/install/chess_camera/share/chess_camera/package.dsv'
+[4.398s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_camera/share/chess_camera/package.sh'
+[4.399s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_camera/share/chess_camera/package.bash'
+[4.400s] colcon.colcon_core.shell INFO Creating package script '/home/jetson/aichess/install/chess_camera/share/chess_camera/package.zsh'
+[4.400s] colcon.colcon_core.environment Level 1 create_file_with_runtime_dependencies(/home/jetson/aichess/install/chess_camera/share/colcon-core/packages/chess_camera)
+[4.401s] colcon.colcon_parallel_executor.executor.parallel DEBUG closing loop
+[4.401s] colcon.colcon_parallel_executor.executor.parallel DEBUG loop closed
+[4.402s] colcon.colcon_parallel_executor.executor.parallel DEBUG run_until_complete finished with '0'
+[4.402s] colcon.colcon_core.event_reactor DEBUG joining thread
+[4.412s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.412s] colcon.colcon_core.plugin_system INFO Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.412s] colcon.colcon_notification.desktop_notification INFO Sending desktop notification using 'notify2'
+[4.428s] colcon.colcon_core.event_reactor DEBUG joined thread
+[4.429s] colcon.colcon_core.shell INFO Creating prefix script '/home/jetson/aichess/install/local_setup.ps1'
+[4.430s] colcon.colcon_core.shell INFO Creating prefix util module '/home/jetson/aichess/install/_local_setup_util_ps1.py'
+[4.433s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/jetson/aichess/install/setup.ps1'
+[4.435s] colcon.colcon_core.shell INFO Creating prefix script '/home/jetson/aichess/install/local_setup.sh'
+[4.436s] colcon.colcon_core.shell INFO Creating prefix util module '/home/jetson/aichess/install/_local_setup_util_sh.py'
+[4.437s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/jetson/aichess/install/setup.sh'
+[4.440s] colcon.colcon_core.shell INFO Creating prefix script '/home/jetson/aichess/install/local_setup.bash'
+[4.441s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/jetson/aichess/install/setup.bash'
+[4.444s] colcon.colcon_core.shell INFO Creating prefix script '/home/jetson/aichess/install/local_setup.zsh'
+[4.444s] colcon.colcon_core.shell INFO Creating prefix chain script '/home/jetson/aichess/install/setup.zsh'

@@ -8,7 +8,7 @@ endif()
 # 查找依赖包
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(gazebo_ros_pkgs REQUIRED)
+# find_package(gazebo_ros_pkgs REQUIRED)
 find_package(gazebo_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)

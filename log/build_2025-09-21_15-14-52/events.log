@@ -1,0 +1,71 @@
+[0.000000] (-) TimerEvent: {}
+[0.000206] (-) JobUnselected: {'identifier': 'chess_description'}
+[0.000434] (-) JobUnselected: {'identifier': 'chess_interfaces'}
+[0.000838] (-) JobUnselected: {'identifier': 'chess_simulation'}
+[0.001086] (chess_camera) JobQueued: {'identifier': 'chess_camera', 'dependencies': OrderedDict([('chess_interfaces', '/home/jetson/aichess/install/chess_interfaces')])}
+[0.001403] (chess_camera) JobStarted: {'identifier': 'chess_camera'}
+[0.099501] (-) TimerEvent: {}
+[0.199769] (-) TimerEvent: {}
+[0.300031] (-) TimerEvent: {}
+[0.400293] (-) TimerEvent: {}
+[0.500582] (-) TimerEvent: {}
+[0.600869] (-) TimerEvent: {}
+[0.701138] (-) TimerEvent: {}
+[0.801425] (-) TimerEvent: {}
+[0.901683] (-) TimerEvent: {}
+[1.001947] (-) TimerEvent: {}
+[1.102216] (-) TimerEvent: {}
+[1.202492] (-) TimerEvent: {}
+[1.302762] (-) TimerEvent: {}
+[1.403039] (-) TimerEvent: {}
+[1.503311] (-) TimerEvent: {}
+[1.603581] (-) TimerEvent: {}
+[1.703862] (-) TimerEvent: {}
+[1.717705] (chess_camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/chess_camera', 'build', '--build-base', '/home/jetson/aichess/build/chess_camera/build', 'install', '--record', '/home/jetson/aichess/build/chess_camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetson/aichess/chess_camera', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HTTPS_PROXY': 'http://127.0.0.1:7897', 'no_proxy': 'localhost,127.0.0.1,192.168.1.0/24', 'LANGUAGE': 'en_US:en', 'USER': 'jetson', 'SSH_CLIENT': '10.0.0.130 55030 22', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'LC_TIME': 'en_US.UTF-8', 'GIT_EDITOR': 'true', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64', 'MOTD_SHOWN': 'pam', 'HOME': '/home/jetson', 'OLDPWD': '/home/jetson', 'NO_PROXY': 'localhost,127.0.0.1,192.168.1.0/24', 'SSH_TTY': '/dev/pts/3', 'JETSON_L4T': '36.4.3', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super', 'LC_MONETARY': 'en_US.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'https_proxy': 'http://127.0.0.1:7897', 'COLCON_PREFIX_PATH': '/home/jetson/dofbot_pro_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'jetson', 'JETSON_MODULE': 'NVIDIA Jetson Orin Nano (4GB ram)', 'JETSON_SERIAL_NUMBER': '1421725053484', 'http_proxy': 'http://127.0.0.1:7897', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/jetson/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'letter', 'COREPACK_ENABLE_AUTO_PIN': '0', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'ROS_DOMAIN_ID': '98', 'AMENT_PREFIX_PATH': '/home/jetson/aichess/install/chess_interfaces:/home/jetson/dofbot_pro_ws/install/orbbec_description:/home/jetson/dofbot_pro_ws/install/orbbec_camera:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_moveit:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface:/home/jetson/dofbot_pro_ws/install/dofbot_pro_info:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_description:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CLAUDECODE': '1', 'LC_MEASUREMENT': 'en_US.UTF-8', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/jetson/aichess/build/chess_camera', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.0.130 55030 10.0.0.119 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetson/aichess/build/chess_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages:/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/local/lib/python3.10/dist-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag/lib/python3.10/site-packages:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/site-packages/:', 'HTTP_PROXY': 'http://127.0.0.1:7897', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'JETSON_JETPACK': '6.2', 'CMAKE_PREFIX_PATH': '/home/jetson/aichess/install/chess_interfaces:/home/jetson/dofbot_pro_ws/install/orbbec_description:/home/jetson/dofbot_pro_ws/install/orbbec_camera:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs:/home/jetson/dofbot_pro_ws/install/dofbot_pro_moveit:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface:/home/jetson/dofbot_pro_ws/install/dofbot_pro_info:/home/jetson/dofbot_pro_ws/install/dofbot_pro_description', 'JETSON_P_NUMBER': 'p3767-0004'}, 'shell': False}
+[1.803991] (-) TimerEvent: {}
+[1.904272] (-) TimerEvent: {}
+[2.004553] (-) TimerEvent: {}
+[2.066474] (chess_camera) StderrLine: {'line': b"/home/jetson/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[2.066933] (chess_camera) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[2.104673] (-) TimerEvent: {}
+[2.204944] (-) TimerEvent: {}
+[2.305220] (-) TimerEvent: {}
+[2.370001] (chess_camera) StdoutLine: {'line': b'running egg_info\n'}
+[2.405312] (-) TimerEvent: {}
+[2.419147] (chess_camera) StdoutLine: {'line': b'creating ../build/chess_camera/chess_camera.egg-info\n'}
+[2.419477] (chess_camera) StdoutLine: {'line': b'writing ../build/chess_camera/chess_camera.egg-info/PKG-INFO\n'}
+[2.420294] (chess_camera) StdoutLine: {'line': b'writing dependency_links to ../build/chess_camera/chess_camera.egg-info/dependency_links.txt\n'}
+[2.420596] (chess_camera) StdoutLine: {'line': b'writing entry points to ../build/chess_camera/chess_camera.egg-info/entry_points.txt\n'}
+[2.420894] (chess_camera) StdoutLine: {'line': b'writing requirements to ../build/chess_camera/chess_camera.egg-info/requires.txt\n'}
+[2.421097] (chess_camera) StdoutLine: {'line': b'writing top-level names to ../build/chess_camera/chess_camera.egg-info/top_level.txt\n'}
+[2.421324] (chess_camera) StdoutLine: {'line': b"writing manifest file '../build/chess_camera/chess_camera.egg-info/SOURCES.txt'\n"}
+[2.505446] (-) TimerEvent: {}
+[2.523105] (chess_camera) StdoutLine: {'line': b"reading manifest file '../build/chess_camera/chess_camera.egg-info/SOURCES.txt'\n"}
+[2.524945] (chess_camera) StdoutLine: {'line': b"writing manifest file '../build/chess_camera/chess_camera.egg-info/SOURCES.txt'\n"}
+[2.525273] (chess_camera) StdoutLine: {'line': b'running build\n'}
+[2.525421] (chess_camera) StdoutLine: {'line': b'running build_py\n'}
+[2.525774] (chess_camera) StdoutLine: {'line': b'creating /home/jetson/aichess/build/chess_camera/build/lib/chess_camera\n'}
+[2.526161] (chess_camera) StdoutLine: {'line': b'copying chess_camera/sim_camera_node.py -> /home/jetson/aichess/build/chess_camera/build/lib/chess_camera\n'}
+[2.526514] (chess_camera) StdoutLine: {'line': b'copying chess_camera/__init__.py -> /home/jetson/aichess/build/chess_camera/build/lib/chess_camera\n'}
+[2.527054] (chess_camera) StdoutLine: {'line': b'running install\n'}
+[2.535011] (chess_camera) StdoutLine: {'line': b'running install_lib\n'}
+[2.585694] (chess_camera) StdoutLine: {'line': b'creating /home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages/chess_camera\n'}
+[2.586030] (chess_camera) StdoutLine: {'line': b'copying /home/jetson/aichess/build/chess_camera/build/lib/chess_camera/sim_camera_node.py -> /home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages/chess_camera\n'}
+[2.586240] (chess_camera) StdoutLine: {'line': b'copying /home/jetson/aichess/build/chess_camera/build/lib/chess_camera/__init__.py -> /home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages/chess_camera\n'}
+[2.587369] (chess_camera) StdoutLine: {'line': b'byte-compiling /home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages/chess_camera/sim_camera_node.py to sim_camera_node.cpython-310.pyc\n'}
+[2.590335] (chess_camera) StdoutLine: {'line': b'byte-compiling /home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages/chess_camera/__init__.py to __init__.cpython-310.pyc\n'}
+[2.590696] (chess_camera) StdoutLine: {'line': b'running install_data\n'}
+[2.591130] (chess_camera) StdoutLine: {'line': b'creating /home/jetson/aichess/install/chess_camera/share/ament_index/resource_index/packages\n'}
+[2.591495] (chess_camera) StdoutLine: {'line': b'copying resource/chess_camera -> /home/jetson/aichess/install/chess_camera/share/ament_index/resource_index/packages\n'}
+[2.591878] (chess_camera) StdoutLine: {'line': b'copying package.xml -> /home/jetson/aichess/install/chess_camera/share/chess_camera\n'}
+[2.592086] (chess_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.605546] (-) TimerEvent: {}
+[2.644868] (chess_camera) StdoutLine: {'line': b'Copying ../build/chess_camera/chess_camera.egg-info to /home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages/chess_camera-0.0.0-py3.10.egg-info\n'}
+[2.646696] (chess_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[2.705657] (-) TimerEvent: {}
+[2.749996] (chess_camera) StdoutLine: {'line': b'Installing sim_camera_node script to /home/jetson/aichess/install/chess_camera/lib/chess_camera\n'}
+[2.750715] (chess_camera) StdoutLine: {'line': b"writing list of installed files to '/home/jetson/aichess/build/chess_camera/install.log'\n"}
+[2.803743] (chess_camera) CommandEnded: {'returncode': 0}
+[2.805727] (-) TimerEvent: {}
+[2.821017] (chess_camera) JobEnded: {'identifier': 'chess_camera', 'rc': 0}
+[2.822137] (-) EventReactorShutdown: {}

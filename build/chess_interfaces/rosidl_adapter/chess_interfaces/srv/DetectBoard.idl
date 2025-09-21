@@ -1,0 +1,47 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from chess_interfaces/srv/DetectBoard.srv
+// generated code does not contain a copyright notice
+
+#include "chess_interfaces/msg/BoardState.idl"
+#include "geometry_msgs/msg/TransformStamped.idl"
+#include "sensor_msgs/msg/Image.idl"
+
+module chess_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "棋盘检测服务" "\n"
+      "输入RGB和深度图像，返回棋盘状态")
+    struct DetectBoard_Request {
+      @verbatim (language="comment", text=
+        "请求" "\n"
+        "RGB图像")
+      sensor_msgs::msg::Image rgb_image;
+
+      @verbatim (language="comment", text=
+        "深度图像")
+      sensor_msgs::msg::Image depth_image;
+
+      @verbatim (language="comment", text=
+        "强制重新检测")
+      boolean force_update;
+    };
+    struct DetectBoard_Response {
+      @verbatim (language="comment", text=
+        "响应" "\n"
+        "检测是否成功")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "错误信息")
+      string error_message;
+
+      @verbatim (language="comment", text=
+        "检测到的棋盘状态")
+      chess_interfaces::msg::BoardState board_state;
+
+      @verbatim (language="comment", text=
+        "棋盘坐标变换")
+      geometry_msgs::msg::TransformStamped board_transform;
+    };
+  };
+};

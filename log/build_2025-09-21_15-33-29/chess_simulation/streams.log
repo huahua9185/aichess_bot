@@ -1,0 +1,31 @@
+[0.024s] Invoking command in '/home/jetson/aichess/build/chess_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake /home/jetson/aichess/src/chess_simulation -DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_simulation
+[0.067s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.339s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.396s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.400s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.412s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.431s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.455s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.520s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.524s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.723s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.836s] CMake Error at CMakeLists.txt:12 (find_package):
+[0.837s]   By not providing "Findgazebo_msgs.cmake" in CMAKE_MODULE_PATH this project
+[0.837s]   has asked CMake to find a package configuration file provided by
+[0.837s]   "gazebo_msgs", but CMake did not find one.
+[0.837s] 
+[0.837s]   Could not find a package configuration file provided by "gazebo_msgs" with
+[0.837s]   any of the following names:
+[0.837s] 
+[0.837s]     gazebo_msgsConfig.cmake
+[0.837s]     gazebo_msgs-config.cmake
+[0.837s] 
+[0.837s]   Add the installation prefix of "gazebo_msgs" to CMAKE_PREFIX_PATH or set
+[0.838s]   "gazebo_msgs_DIR" to a directory containing one of the above files.  If
+[0.838s]   "gazebo_msgs" provides a separate development package or SDK, be sure it
+[0.838s]   has been installed.
+[0.838s] 
+[0.838s] 
+[0.838s] -- Configuring incomplete, errors occurred!
+[0.838s] See also "/home/jetson/aichess/build/chess_simulation/CMakeFiles/CMakeOutput.log".
+[0.852s] Invoked command in '/home/jetson/aichess/build/chess_simulation' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/dofbot_pro_ws/install/dofbot_pro_yolov11:/home/jetson/dofbot_pro_ws/install/dofbot_pro_voice_ctrl:/home/jetson/dofbot_pro_ws/install/dofbot_pro_vision:/home/jetson/dofbot_pro_ws/install/dofbot_pro_mediapipe:/home/jetson/dofbot_pro_ws/install/dofbot_pro_driver:/home/jetson/dofbot_pro_ws/install/dofbot_pro_depth:/home/jetson/dofbot_pro_ws/install/dofbot_pro_color:/home/jetson/dofbot_pro_ws/install/dofbot_pro_apriltag:/home/jetson/dofbot_pro_ws/install/dofbot_pro_KCF:/opt/ros/humble /usr/bin/cmake /home/jetson/aichess/src/chess_simulation -DCMAKE_INSTALL_PREFIX=/home/jetson/aichess/install/chess_simulation

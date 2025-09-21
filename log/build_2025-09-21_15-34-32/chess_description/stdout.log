@@ -1,0 +1,21 @@
+-- Install configuration: ""
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/urdf
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/urdf/dofbot_pro.urdf.xacro
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/meshes
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/config
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/config/dofbot_pro_controllers.yaml
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/ament_index/resource_index/package_run_dependencies/chess_description
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/ament_index/resource_index/parent_prefix_path/chess_description
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/environment/ament_prefix_path.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/environment/path.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/environment/path.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.bash
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.sh
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.zsh
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/local_setup.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/package.dsv
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/ament_index/resource_index/packages/chess_description
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/cmake/chess_descriptionConfig.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/cmake/chess_descriptionConfig-version.cmake
+-- Up-to-date: /home/jetson/aichess/install/chess_description/share/chess_description/package.xml

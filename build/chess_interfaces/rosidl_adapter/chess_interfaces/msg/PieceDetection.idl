@@ -1,0 +1,45 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from chess_interfaces/msg/PieceDetection.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "sensor_msgs/msg/Image.idl"
+#include "std_msgs/msg/Header.idl"
+
+module chess_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "棋子检测结果消息" "\n"
+      "用于表示单个棋子的检测结果")
+    struct PieceDetection {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "棋子位置信息" "\n"
+        "3D世界坐标")
+      geometry_msgs::msg::Point position_3d;
+
+      @verbatim (language="comment", text=
+        "2D图像坐标")
+      geometry_msgs::msg::Point position_2d;
+
+      @verbatim (language="comment", text=
+        "棋子属性" "\n"
+        "棋子类型 (1=王, 2=后, 3=车, 4=象, 5=马, 6=兵)")
+      int8 piece_type;
+
+      @verbatim (language="comment", text=
+        "棋子颜色 (1=白, -1=黑, 0=未知)")
+      int8 piece_color;
+
+      @verbatim (language="comment", text=
+        "检测置信度 (0.0-1.0)")
+      float confidence;
+
+      @verbatim (language="comment", text=
+        "图像数据" "\n"
+        "棋子区域图像")
+      sensor_msgs::msg::Image roi_image;
+    };
+  };
+};

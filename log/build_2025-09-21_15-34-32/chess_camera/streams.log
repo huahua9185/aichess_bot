@@ -1,0 +1,27 @@
+[1.597s] Invoking command in '/home/jetson/aichess/chess_camera': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/build/chess_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages:/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/chess_camera build --build-base /home/jetson/aichess/build/chess_camera/build install --record /home/jetson/aichess/build/chess_camera/install.log --single-version-externally-managed install_data
+[1.948s] /home/jetson/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.949s]   warnings.warn(msg)
+[2.260s] running egg_info
+[2.311s] writing ../build/chess_camera/chess_camera.egg-info/PKG-INFO
+[2.312s] writing dependency_links to ../build/chess_camera/chess_camera.egg-info/dependency_links.txt
+[2.312s] writing entry points to ../build/chess_camera/chess_camera.egg-info/entry_points.txt
+[2.312s] writing requirements to ../build/chess_camera/chess_camera.egg-info/requires.txt
+[2.313s] writing top-level names to ../build/chess_camera/chess_camera.egg-info/top_level.txt
+[2.419s] reading manifest file '../build/chess_camera/chess_camera.egg-info/SOURCES.txt'
+[2.423s] writing manifest file '../build/chess_camera/chess_camera.egg-info/SOURCES.txt'
+[2.423s] running build
+[2.424s] running build_py
+[2.424s] copying chess_camera/sim_camera_node.py -> /home/jetson/aichess/build/chess_camera/build/lib/chess_camera
+[2.425s] copying chess_camera/__init__.py -> /home/jetson/aichess/build/chess_camera/build/lib/chess_camera
+[2.425s] running install
+[2.433s] running install_lib
+[2.486s] running install_data
+[2.487s] copying resource/chess_camera -> /home/jetson/aichess/install/chess_camera/share/ament_index/resource_index/packages
+[2.487s] copying package.xml -> /home/jetson/aichess/install/chess_camera/share/chess_camera
+[2.488s] running install_egg_info
+[2.540s] removing '/home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages/chess_camera-0.0.0-py3.10.egg-info' (and everything under it)
+[2.541s] Copying ../build/chess_camera/chess_camera.egg-info to /home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages/chess_camera-0.0.0-py3.10.egg-info
+[2.542s] running install_scripts
+[2.648s] Installing sim_camera_node script to /home/jetson/aichess/install/chess_camera/lib/chess_camera
+[2.651s] writing list of installed files to '/home/jetson/aichess/build/chess_camera/install.log'
+[2.706s] Invoked command in '/home/jetson/aichess/chess_camera' returned '0': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/build/chess_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/aichess/install/chess_camera/lib/python3.10/site-packages:/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/chess_camera build --build-base /home/jetson/aichess/build/chess_camera/build install --record /home/jetson/aichess/build/chess_camera/install.log --single-version-externally-managed install_data
