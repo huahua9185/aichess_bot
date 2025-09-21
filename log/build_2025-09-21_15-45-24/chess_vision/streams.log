@@ -1,0 +1,47 @@
+[1.591s] Invoking command in '/home/jetson/aichess/src/chess_vision': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/build/chess_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages:/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/chess_vision build --build-base /home/jetson/aichess/build/chess_vision/build install --record /home/jetson/aichess/build/chess_vision/install.log --single-version-externally-managed install_data
+[1.949s] /home/jetson/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[1.949s]   warnings.warn(msg)
+[2.258s] running egg_info
+[2.308s] creating ../../build/chess_vision/chess_vision.egg-info
+[2.309s] writing ../../build/chess_vision/chess_vision.egg-info/PKG-INFO
+[2.309s] writing dependency_links to ../../build/chess_vision/chess_vision.egg-info/dependency_links.txt
+[2.310s] writing entry points to ../../build/chess_vision/chess_vision.egg-info/entry_points.txt
+[2.310s] writing requirements to ../../build/chess_vision/chess_vision.egg-info/requires.txt
+[2.310s] writing top-level names to ../../build/chess_vision/chess_vision.egg-info/top_level.txt
+[2.311s] writing manifest file '../../build/chess_vision/chess_vision.egg-info/SOURCES.txt'
+[2.416s] reading manifest file '../../build/chess_vision/chess_vision.egg-info/SOURCES.txt'
+[2.418s] writing manifest file '../../build/chess_vision/chess_vision.egg-info/SOURCES.txt'
+[2.418s] running build
+[2.419s] running build_py
+[2.419s] creating /home/jetson/aichess/build/chess_vision/build/lib/chess_vision
+[2.419s] copying chess_vision/piece_detector.py -> /home/jetson/aichess/build/chess_vision/build/lib/chess_vision
+[2.420s] copying chess_vision/__init__.py -> /home/jetson/aichess/build/chess_vision/build/lib/chess_vision
+[2.420s] copying chess_vision/vision_coordinator.py -> /home/jetson/aichess/build/chess_vision/build/lib/chess_vision
+[2.420s] copying chess_vision/board_detector.py -> /home/jetson/aichess/build/chess_vision/build/lib/chess_vision
+[2.421s] running install
+[2.429s] running install_lib
+[2.481s] creating /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision
+[2.481s] copying /home/jetson/aichess/build/chess_vision/build/lib/chess_vision/piece_detector.py -> /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision
+[2.481s] copying /home/jetson/aichess/build/chess_vision/build/lib/chess_vision/__init__.py -> /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision
+[2.481s] copying /home/jetson/aichess/build/chess_vision/build/lib/chess_vision/vision_coordinator.py -> /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision
+[2.482s] copying /home/jetson/aichess/build/chess_vision/build/lib/chess_vision/board_detector.py -> /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision
+[2.483s] byte-compiling /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision/piece_detector.py to piece_detector.cpython-310.pyc
+[2.488s] byte-compiling /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision/__init__.py to __init__.cpython-310.pyc
+[2.488s] byte-compiling /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision/vision_coordinator.py to vision_coordinator.cpython-310.pyc
+[2.491s] byte-compiling /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision/board_detector.py to board_detector.cpython-310.pyc
+[2.494s] running install_data
+[2.495s] creating /home/jetson/aichess/install/chess_vision/share/ament_index/resource_index/packages
+[2.495s] copying resource/chess_vision -> /home/jetson/aichess/install/chess_vision/share/ament_index/resource_index/packages
+[2.496s] copying package.xml -> /home/jetson/aichess/install/chess_vision/share/chess_vision
+[2.496s] creating /home/jetson/aichess/install/chess_vision/share/chess_vision/launch
+[2.496s] copying launch/chess_vision.launch.py -> /home/jetson/aichess/install/chess_vision/share/chess_vision/launch
+[2.496s] creating /home/jetson/aichess/install/chess_vision/share/chess_vision/config
+[2.497s] copying config/vision_params.yaml -> /home/jetson/aichess/install/chess_vision/share/chess_vision/config
+[2.497s] running install_egg_info
+[2.551s] Copying ../../build/chess_vision/chess_vision.egg-info to /home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages/chess_vision-0.0.1-py3.10.egg-info
+[2.552s] running install_scripts
+[2.659s] Installing board_detector script to /home/jetson/aichess/install/chess_vision/bin
+[2.659s] Installing piece_detector script to /home/jetson/aichess/install/chess_vision/bin
+[2.659s] Installing vision_coordinator script to /home/jetson/aichess/install/chess_vision/bin
+[2.660s] writing list of installed files to '/home/jetson/aichess/build/chess_vision/install.log'
+[2.714s] Invoked command in '/home/jetson/aichess/src/chess_vision' returned '0': AMENT_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetson/aichess/install/chess_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/jetson/aichess/install/chess_interfaces/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera/lib:/home/jetson/dofbot_pro_ws/install/orbbec_camera_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_msgs/lib:/home/jetson/dofbot_pro_ws/install/dofbot_pro_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/jetson/aichess/build/chess_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetson/aichess/install/chess_vision/lib/python3.10/site-packages:/home/jetson/aichess/install/chess_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/chess_vision build --build-base /home/jetson/aichess/build/chess_vision/build install --record /home/jetson/aichess/build/chess_vision/install.log --single-version-externally-managed install_data

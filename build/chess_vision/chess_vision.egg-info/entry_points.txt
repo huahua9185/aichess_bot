@@ -1,0 +1,4 @@
+[console_scripts]
+board_detector = chess_vision.board_detector:main
+piece_detector = chess_vision.piece_detector:main
+vision_coordinator = chess_vision.vision_coordinator:main

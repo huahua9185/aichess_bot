@@ -1,0 +1,67 @@
+# 视觉系统配置参数
+
+board_detector:
+  ros__parameters:
+    camera_topic: "/camera"
+    depth_topic: "/depth_camera"
+    camera_info_topic: "/camera/camera_info"
+    board_frame: "board_frame"
+    camera_frame: "camera_link"
+    detection_rate: 5.0  # Hz
+    aruco_dict_id: 10  # DICT_6X6_250
+    aruco_marker_size: 0.05  # 5cm
+
+    # 棋盘参数
+    square_size: 0.055  # 5.5cm每格
+    board_size_x: 8
+    board_size_y: 8
+
+    # 检测参数
+    corner_refinement_method: 1  # CORNER_REFINE_SUBPIX
+    adaptive_thresh_win_size_min: 3
+    adaptive_thresh_win_size_max: 23
+    adaptive_thresh_win_size_step: 10
+
+piece_detector:
+  ros__parameters:
+    detection_method: "color_shape"  # color_shape, ml, hybrid
+    detection_rate: 2.0  # Hz
+    min_piece_area: 100
+    max_piece_area: 5000
+    piece_height_threshold: 0.01  # 1cm
+
+    # 颜色阈值 (HSV)
+    white_piece_hsv_lower: [0, 0, 180]
+    white_piece_hsv_upper: [180, 50, 255]
+    black_piece_hsv_lower: [0, 0, 0]
+    black_piece_hsv_upper: [180, 255, 80]
+
+    # 形状分类参数
+    circularity_threshold: 0.7
+    aspect_ratio_threshold: 1.5
+    area_threshold_large: 1000
+
+    # 深度验证参数
+    depth_validation_enabled: true
+    max_piece_distance: 2.0  # 2米
+    min_piece_height: 0.005  # 5mm
+
+vision_coordinator:
+  ros__parameters:
+    update_rate: 5.0  # Hz
+    confidence_threshold: 0.5
+    board_validation_timeout: 10.0  # 秒
+    piece_detection_timeout: 5.0  # 秒
+
+    # 移动检测参数
+    move_detection_enabled: true
+    position_change_threshold: 2  # 最少变化格数
+    move_validation_timeout: 3.0  # 秒
+
+    # 游戏状态参数
+    auto_start_detection: true
+    starting_position_match_threshold: 0.8  # 80%匹配
+
+    # 调试参数
+    publish_debug_images: true
+    debug_image_scale: 0.5

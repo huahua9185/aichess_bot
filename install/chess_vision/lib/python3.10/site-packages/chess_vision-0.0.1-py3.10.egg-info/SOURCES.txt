@@ -1,0 +1,16 @@
+package.xml
+setup.py
+../../build/chess_vision/chess_vision.egg-info/PKG-INFO
+../../build/chess_vision/chess_vision.egg-info/SOURCES.txt
+../../build/chess_vision/chess_vision.egg-info/dependency_links.txt
+../../build/chess_vision/chess_vision.egg-info/entry_points.txt
+../../build/chess_vision/chess_vision.egg-info/requires.txt
+../../build/chess_vision/chess_vision.egg-info/top_level.txt
+../../build/chess_vision/chess_vision.egg-info/zip-safe
+chess_vision/__init__.py
+chess_vision/board_detector.py
+chess_vision/piece_detector.py
+chess_vision/vision_coordinator.py
+config/vision_params.yaml
+launch/chess_vision.launch.py
+resource/chess_vision
