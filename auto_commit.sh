@@ -4,16 +4,16 @@
 # Auto commit script for AI Chess Robot project
 
 function auto_commit() {
-    local 提交信息="$1"
+    local commit_msg="$1"
 
-    if [ -z "$提交信息" ]; then
+    if [ -z "$commit_msg" ]; then
         echo "❌ 错误: 请提供提交信息"
         echo "用法: auto_commit \"你的提交信息\""
         return 1
     fi
 
     echo "🔄 开始自动提交流程..."
-    echo "📝 提交信息: $提交信息"
+    echo "📝 提交信息: $commit_msg"
 
     # 添加所有文件到暂存区
     echo "📁 添加文件到暂存区..."
@@ -31,7 +31,7 @@ function auto_commit() {
 
     # 提交更改
     echo "💾 提交更改..."
-    git commit -m "$提交信息"
+    git commit -m "$commit_msg"
 
     if [ $? -eq 0 ]; then
         echo "✅ 本地提交成功"

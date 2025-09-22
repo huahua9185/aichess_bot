@@ -1,0 +1,73 @@
+# 运动规划服务定义
+# 用于生成机械臂移动路径
+
+# 请求部分
+# 目标移动
+ChessMove target_move
+
+# 规划模式
+uint8 FAST_PLANNING = 0      # 快速规划
+uint8 SMOOTH_PLANNING = 1    # 平滑规划
+uint8 SAFE_PLANNING = 2      # 安全规划
+
+uint8 planning_mode
+
+# 速度比例 (0.1-1.0)
+float32 velocity_scaling
+
+# 加速度比例 (0.1-1.0)
+float32 acceleration_scaling
+
+# 是否避免经过其他棋子上方
+bool avoid_pieces
+
+# 抓取高度 (米)
+float32 pick_height
+
+# 放置高度 (米)
+float32 place_height
+
+# 安全高度 (米)
+float32 safe_height
+
+# 规划超时时间 (秒)
+float32 planning_timeout
+
+---
+
+# 响应部分
+# 规划是否成功
+bool success
+
+# 规划的轨迹
+trajectory_msgs/JointTrajectory joint_trajectory
+
+# 笛卡尔路径点
+geometry_msgs/PoseStamped[] cartesian_path
+
+# 预计执行时间 (秒)
+float32 execution_time
+
+# 路径长度 (米)
+float32 path_length
+
+# 规划耗时 (毫秒)
+int32 planning_time
+
+# 轨迹质量评分 (0.0-1.0)
+float32 trajectory_quality
+
+# 碰撞检查结果
+bool collision_free
+
+# 关节限制检查
+bool joint_limits_ok
+
+# 错误信息
+string error_message
+
+# 警告信息
+string[] warnings
+
+# 调试信息
+string debug_info

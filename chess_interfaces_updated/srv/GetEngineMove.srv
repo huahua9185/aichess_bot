@@ -1,0 +1,69 @@
+# Stockfish引擎移动计算服务定义
+# 用于请求AI引擎计算最佳移动
+
+# 请求部分
+# 当前棋局的FEN表示法
+string fen_position
+
+# 引擎思考深度 (1-30，越高越慢但越准确)
+int32 depth
+
+# 思考时间限制 (秒)
+float32 time_limit
+
+# 引擎难度等级 (1-20)
+int32 skill_level
+
+# 多重PV分析数量 (返回多个最佳移动)
+int32 multipv
+
+# 是否启用开局库
+bool use_opening_book
+
+# 是否启用残局库
+bool use_endgame_tablebase
+
+---
+
+# 响应部分
+# 计算是否成功
+bool success
+
+# 推荐的最佳移动
+ChessMove best_move
+
+# UCI格式的移动 (如"e2e4")
+string best_move_uci
+
+# 代数记号移动 (如"e4", "Nf3")
+string best_move_san
+
+# 局面评估值 (厘兵为单位，正数有利白方)
+float32 evaluation
+
+# 引擎分析的主要变化
+string[] principal_variation
+
+# 实际思考时间 (秒)
+float32 thinking_time
+
+# 搜索节点数
+int64 nodes_searched
+
+# 搜索深度
+int32 search_depth
+
+# 引擎置信度 (0.0-1.0)
+float32 confidence
+
+# 是否为强制移动 (只有一个合法移动)
+bool is_forced_move
+
+# 多重PV分析结果 (如果请求)
+string[] alternative_moves
+
+# 每个候选移动的评分
+float32[] move_evaluations
+
+# 错误信息
+string error_message

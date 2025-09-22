@@ -1,0 +1,73 @@
+# 移动合法性验证服务定义
+# 用于验证人类或系统的移动是否符合国际象棋规则
+
+# 请求部分
+# 当前棋局的FEN表示法
+string fen_position
+
+# 要验证的移动 (UCI格式，如"e2e4", "e7e8q")
+string move_uci
+
+# 要验证的移动 (代数记号，如"e4", "Nf3", "O-O")
+string move_san
+
+# 是否启用严格验证 (包括三次重复、50步规则等)
+bool strict_validation
+
+# 验证模式
+uint8 BASIC_LEGAL = 0     # 基本合法性检查
+uint8 FULL_RULES = 1      # 完整规则检查
+uint8 TOURNAMENT = 2      # 锦标赛级别验证
+
+uint8 validation_mode
+
+---
+
+# 响应部分
+# 移动是否合法
+bool is_legal
+
+# 验证结果状态
+uint8 VALID = 0
+uint8 INVALID_FORMAT = 1
+uint8 INVALID_PIECE = 2
+uint8 INVALID_PATH = 3
+uint8 LEAVES_KING_IN_CHECK = 4
+uint8 NO_PIECE_AT_SOURCE = 5
+uint8 WRONG_TURN = 6
+uint8 INVALID_CASTLE = 7
+uint8 INVALID_EN_PASSANT = 8
+uint8 INVALID_PROMOTION = 9
+uint8 GAME_OVER = 10
+
+uint8 validation_status
+
+# 标准化后的移动信息
+ChessMove validated_move
+
+# 移动后的新FEN位置
+string resulting_fen
+
+# 移动是否导致将军
+bool gives_check
+
+# 移动是否导致将死
+bool gives_checkmate
+
+# 移动是否导致和棋
+bool gives_stalemate
+
+# 移动是否导致僵局
+bool gives_draw
+
+# 和棋原因 (如果适用)
+string draw_reason
+
+# 所有合法移动列表 (用于建议)
+string[] legal_moves
+
+# 详细错误信息
+string error_message
+
+# 移动描述 (人类可读)
+string move_description

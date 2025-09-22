@@ -1,0 +1,84 @@
+# 移动执行服务定义
+# 用于执行规划好的机械臂移动
+
+# 请求部分
+# 要执行的移动
+ChessMove chess_move
+
+# 规划好的轨迹
+trajectory_msgs/JointTrajectory trajectory
+
+# 执行模式
+uint8 SIMULATION_MODE = 0    # 仿真模式
+uint8 REAL_MODE = 1         # 真实硬件模式
+uint8 PREVIEW_MODE = 2      # 预览模式 (不实际执行)
+
+uint8 execution_mode
+
+# 速度比例 (0.1-1.0)
+float32 velocity_scaling
+
+# 是否启用碰撞检测
+bool enable_collision_detection
+
+# 是否启用力控制
+bool enable_force_control
+
+# 最大接触力 (牛顿)
+float32 max_contact_force
+
+# 执行超时时间 (秒)
+float32 execution_timeout
+
+# 是否等待执行完成
+bool wait_for_completion
+
+# 是否记录执行数据
+bool record_execution
+
+---
+
+# 响应部分
+# 执行是否成功
+bool success
+
+# 实际执行时间 (秒)
+float32 actual_duration
+
+# 轨迹跟踪误差 (最大偏差，米)
+float32 tracking_error
+
+# 是否检测到碰撞
+bool collision_detected
+
+# 是否超出力限制
+bool force_limit_exceeded
+
+# 最终位置误差 (米)
+float32 final_position_error
+
+# 最终姿态误差 (弧度)
+float32 final_orientation_error
+
+# 执行状态
+uint8 EXEC_SUCCESS = 0
+uint8 EXEC_TIMEOUT = 1
+uint8 EXEC_COLLISION = 2
+uint8 EXEC_FORCE_LIMIT = 3
+uint8 EXEC_JOINT_LIMIT = 4
+uint8 EXEC_COMMUNICATION_ERROR = 5
+uint8 EXEC_UNKNOWN_ERROR = 6
+
+uint8 execution_status
+
+# 错误信息
+string error_message
+
+# 警告信息
+string[] warnings
+
+# 执行统计信息
+string execution_stats
+
+# 记录的数据文件路径 (如果启用记录)
+string recorded_data_path

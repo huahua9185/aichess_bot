@@ -1,0 +1,49 @@
+# 棋盘检测服务定义
+# 用于触发棋盘和棋子的视觉检测
+
+# 请求部分
+# 是否强制重新检测 (忽略缓存)
+bool force_detection
+
+# 检测超时时间 (秒)
+float32 timeout
+
+# 是否启用深度检测
+bool use_depth
+
+# 是否启用ArUco标记检测
+bool detect_aruco
+
+# 检测模式
+uint8 FAST_MODE = 0      # 快速检测
+uint8 ACCURATE_MODE = 1  # 精确检测
+uint8 DEBUG_MODE = 2     # 调试模式
+
+uint8 detection_mode
+
+---
+
+# 响应部分
+# 检测是否成功
+bool success
+
+# 检测的棋盘状态
+BoardState board_state
+
+# 检测耗时 (毫秒)
+int32 detection_time
+
+# 置信度分数 (0.0-1.0)
+float32 confidence
+
+# 检测到的变化
+bool board_changed
+
+# 错误信息
+string error_message
+
+# 调试信息
+string debug_info
+
+# 检测的图像数据 (可选，用于调试)
+sensor_msgs/Image debug_image
