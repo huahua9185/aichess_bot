@@ -1,0 +1,65 @@
+# Gazebo Web GUI配置文件
+# 启用Web访问支持，允许通过浏览器远程监控仿真
+
+# Web服务器配置
+web_server:
+  # 监听地址（0.0.0.0允许外部访问）
+  host: "0.0.0.0"
+  # Web端口
+  port: 8080
+  # 静态文件目录
+  static_dir: "/usr/share/gz/gz-sim7/gui/plugins/web"
+
+# WebSocket配置
+websocket:
+  # WebSocket端口
+  port: 9002
+  # 允许的源地址
+  allowed_origins:
+    - "*"
+  # 最大连接数
+  max_connections: 10
+
+# GUI插件配置
+gui_plugins:
+  # 3D场景插件
+  - name: "GzScene3D"
+    config:
+      engine: "ogre2"
+      scene: "scene"
+      camera_pose: "6 0 6 0 0.5 3.14"
+
+  # 主题控制插件
+  - name: "WorldControl"
+
+  # 世界状态插件
+  - name: "WorldStats"
+
+  # 实体树插件
+  - name: "EntityTree"
+
+  # 组件查看器
+  - name: "ComponentInspector"
+
+  # 图像显示插件
+  - name: "ImageDisplay"
+    config:
+      topic: "/camera/rgb/image_raw"
+
+# 安全配置
+security:
+  # 启用CORS
+  enable_cors: true
+  # 允许的HTTP方法
+  allowed_methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+  # 允许的头部
+  allowed_headers: ["Content-Type", "Authorization"]
+
+# 性能配置
+performance:
+  # 帧率限制
+  max_fps: 30
+  # 渲染质量
+  render_quality: "medium"
+  # 启用压缩
+  enable_compression: true

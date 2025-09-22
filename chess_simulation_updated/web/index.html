@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazebo象棋机器人 - Web监控界面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .status-bar {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #e74c3c;
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.connected {
+            background: #27ae60;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            padding: 1rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            height: calc(100vh - 120px);
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            overflow: auto;
+        }
+
+        .panel h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        #gazebo-container {
+            grid-row: span 2;
+            position: relative;
+            min-height: 500px;
+        }
+
+        #gazebo-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+
+        .control-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn-success {
+            background: #27ae60;
+            color: white;
+        }
+
+        .btn-warning {
+            background: #f39c12;
+            color: white;
+        }
+
+        .btn-danger {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .data-display {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .log-entry {
+            margin-bottom: 0.5rem;
+            padding: 0.25rem;
+            border-left: 3px solid #3498db;
+            padding-left: 0.75rem;
+        }
+
+        .log-entry.error {
+            border-left-color: #e74c3c;
+            background: rgba(231, 76, 60, 0.1);
+        }
+
+        .log-entry.warning {
+            border-left-color: #f39c12;
+            background: rgba(243, 156, 18, 0.1);
+        }
+
+        .log-entry.success {
+            border-left-color: #27ae60;
+            background: rgba(39, 174, 96, 0.1);
+        }
+
+        .timestamp {
+            color: #7f8c8d;
+            font-size: 0.8rem;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .chess-board {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            gap: 1px;
+            background: #8b4513;
+            padding: 0.5rem;
+            border-radius: 8px;
+            aspect-ratio: 0.9;
+            max-height: 300px;
+        }
+
+        .chess-square {
+            background: #f5deb3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+            border-radius: 2px;
+        }
+
+        .chess-square.dark {
+            background: #d2b48c;
+        }
+
+        .chess-piece {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🤖 Gazebo象棋机器人 Web监控界面</h1>
+        <div class="status-bar">
+            <div class="status-item">
+                <div class="status-dot" id="gazebo-status"></div>
+                <span>Gazebo仿真</span>
+            </div>
+            <div class="status-item">
+                <div class="status-dot" id="websocket-status"></div>
+                <span>WebSocket连接</span>
+            </div>
+            <div class="status-item">
+                <div class="status-dot" id="robot-status"></div>
+                <span>机器人状态</span>
+            </div>
+            <div class="status-item">
+                <div class="status-dot" id="game-status"></div>
+                <span>游戏引擎</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Gazebo仿真界面 -->
+        <div class="panel" id="gazebo-container">
+            <h2>🎮 Gazebo 3D仿真环境</h2>
+            <div id="gazebo-frame" style="width: 100%; height: 100%; background: #2c3e50; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white;">
+                <div style="text-align: center;">
+                    <h3>🚀 Gazebo仿真环境运行中</h3>
+                    <p>仿真数据通过WebSocket实时传输</p>
+                    <div style="margin-top: 20px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                        <strong>当前模型:</strong>
+                        <div id="model-list-display">加载中...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 控制面板 -->
+        <div class="panel">
+            <h2>🎯 系统控制</h2>
+            <div class="control-buttons">
+                <button class="btn btn-success" onclick="sendCommand('start_game')">开始游戏</button>
+                <button class="btn btn-warning" onclick="sendCommand('pause_game')">暂停游戏</button>
+                <button class="btn btn-primary" onclick="sendCommand('reset_game')">重置游戏</button>
+                <button class="btn btn-danger" onclick="sendCommand('emergency_stop')">紧急停止</button>
+            </div>
+
+            <h3>📊 棋盘状态</h3>
+            <div class="chess-board" id="chess-board">
+                <!-- 棋盘将通过JavaScript动态生成 -->
+            </div>
+
+            <h3>🦾 机械臂状态</h3>
+            <div class="data-display" id="arm-status">
+                等待机械臂数据...
+            </div>
+        </div>
+
+        <!-- 系统日志 -->
+        <div class="panel">
+            <h2>📝 系统日志</h2>
+            <div class="data-display" id="system-logs">
+                <div class="log-entry">
+                    <span class="timestamp">[启动]</span> 等待WebSocket连接...
+                </div>
+            </div>
+
+            <h3>🎲 游戏状态</h3>
+            <div class="data-display" id="game-state">
+                等待游戏数据...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // WebSocket连接
+        let websocket = null;
+        let reconnectInterval = null;
+
+        // 页面元素
+        const elements = {
+            websocketStatus: document.getElementById('websocket-status'),
+            gazeboStatus: document.getElementById('gazebo-status'),
+            robotStatus: document.getElementById('robot-status'),
+            gameStatus: document.getElementById('game-status'),
+            systemLogs: document.getElementById('system-logs'),
+            gameState: document.getElementById('game-state'),
+            armStatus: document.getElementById('arm-status'),
+            chessBoard: document.getElementById('chess-board'),
+            gazeboFrame: document.getElementById('gazebo-frame')
+        };
+
+        // 初始化
+        function init() {
+            connectWebSocket();
+            initChessBoard();
+            updateGazeboFrame();
+        }
+
+        // WebSocket连接
+        function connectWebSocket() {
+            try {
+                const wsUrl = `ws://${window.location.hostname}:9004`;
+                websocket = new WebSocket(wsUrl);
+
+                websocket.onopen = function(event) {
+                    updateStatus('websocket', true);
+                    addLog('WebSocket连接已建立', 'success');
+
+                    if (reconnectInterval) {
+                        clearInterval(reconnectInterval);
+                        reconnectInterval = null;
+                    }
+                };
+
+                websocket.onmessage = function(event) {
+                    try {
+                        const data = JSON.parse(event.data);
+                        handleMessage(data);
+
+                        // 如果收到欢迎消息，请求状态更新
+                        if (data.type === 'welcome') {
+                            websocket.send(JSON.stringify({type: 'get_status'}));
+                        }
+                    } catch (e) {
+                        addLog(`解析消息失败: ${e.message}`, 'error');
+                    }
+                };
+
+                websocket.onclose = function(event) {
+                    updateStatus('websocket', false);
+                    addLog('WebSocket连接已断开，尝试重连...', 'warning');
+
+                    if (!reconnectInterval) {
+                        reconnectInterval = setInterval(connectWebSocket, 5000);
+                    }
+                };
+
+                websocket.onerror = function(error) {
+                    addLog(`WebSocket错误: ${error}`, 'error');
+                };
+
+            } catch (e) {
+                addLog(`连接失败: ${e.message}`, 'error');
+            }
+        }
+
+        // 处理接收到的消息
+        function handleMessage(data) {
+            switch (data.type) {
+                case 'welcome':
+                    addLog(data.data.message, 'success');
+                    break;
+
+                case 'status_update':
+                    updateGazeboStatus(data.data);
+                    break;
+
+                case 'system_status':
+                    updateSystemStatus(data.data);
+                    break;
+
+                case 'board_state':
+                    updateBoardState(data.data);
+                    break;
+
+                case 'chess_move':
+                    addLog(`棋子移动: ${data.data.from_square} → ${data.data.to_square}`, 'success');
+                    break;
+
+                case 'joint_state':
+                    updateArmStatus(data.data);
+                    break;
+
+                default:
+                    addLog(`收到未知消息类型: ${data.type}`, 'warning');
+            }
+        }
+
+        // 发送命令
+        function sendCommand(command) {
+            if (websocket && websocket.readyState === WebSocket.OPEN) {
+                const message = {
+                    type: command,
+                    timestamp: Date.now()
+                };
+                websocket.send(JSON.stringify(message));
+                addLog(`发送命令: ${command}`, 'success');
+            } else {
+                addLog('WebSocket未连接，无法发送命令', 'error');
+            }
+        }
+
+        // 更新状态指示器
+        function updateStatus(type, connected) {
+            const element = elements[type + 'Status'];
+            if (element) {
+                element.className = connected ? 'status-dot connected' : 'status-dot';
+            }
+        }
+
+        // 添加日志
+        function addLog(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const logEntry = document.createElement('div');
+            logEntry.className = `log-entry ${type}`;
+            logEntry.innerHTML = `<span class="timestamp">[${timestamp}]</span> ${message}`;
+
+            elements.systemLogs.insertBefore(logEntry, elements.systemLogs.firstChild);
+
+            // 限制日志条数
+            const logs = elements.systemLogs.children;
+            if (logs.length > 50) {
+                elements.systemLogs.removeChild(logs[logs.length - 1]);
+            }
+        }
+
+        // 更新Gazebo状态
+        function updateGazeboStatus(status) {
+            updateStatus('gazebo', status.gazebo_running);
+
+            const modelDisplay = document.getElementById('model-list-display');
+            if (modelDisplay && status.models) {
+                if (status.models.length > 0) {
+                    modelDisplay.innerHTML = status.models.map(model =>
+                        `<div style="padding: 2px 0; font-size: 0.9em;">• ${model}</div>`
+                    ).join('');
+                } else {
+                    modelDisplay.innerHTML = '<div style="color: #f39c12;">无模型</div>';
+                }
+            }
+
+            if (status.gazebo_running) {
+                addLog(`Gazebo状态: 运行中 (${status.models?.length || 0} 个模型)`, 'success');
+            } else {
+                addLog('Gazebo状态: 未连接', 'warning');
+            }
+        }
+
+        // 更新系统状态
+        function updateSystemStatus(status) {
+            updateStatus('robot', status.hardware_connected);
+            updateStatus('game', status.services_ready);
+
+            elements.gameState.innerHTML = `
+                <strong>当前状态:</strong> ${status.current_state}<br>
+                <strong>进度:</strong> ${status.progress}%<br>
+                <strong>错误信息:</strong> ${status.error_message || '无'}
+            `;
+        }
+
+        // 更新棋盘状态
+        function updateBoardState(boardState) {
+            // 这里可以实现棋盘的可视化更新
+            addLog(`棋盘更新: 第${boardState.move_count}步`, 'info');
+        }
+
+        // 更新机械臂状态
+        function updateArmStatus(jointState) {
+            const positions = jointState.positions.map((pos, i) =>
+                `${jointState.joint_names[i]}: ${pos.toFixed(3)}rad`
+            ).join('<br>');
+
+            elements.armStatus.innerHTML = `
+                <strong>关节位置:</strong><br>
+                ${positions}
+            `;
+        }
+
+        // 初始化象棋棋盘
+        function initChessBoard() {
+            const board = elements.chessBoard;
+            board.innerHTML = '';
+
+            // 9x10的象棋棋盘
+            for (let row = 0; row < 10; row++) {
+                for (let col = 0; col < 9; col++) {
+                    const square = document.createElement('div');
+                    square.className = 'chess-square';
+                    if ((row + col) % 2 === 1) {
+                        square.classList.add('dark');
+                    }
+                    board.appendChild(square);
+                }
+            }
+        }
+
+        // 更新Gazebo框架地址
+        function updateGazeboFrame() {
+            const currentHost = window.location.hostname;
+            elements.gazeboFrame.src = `http://${currentHost}:8080`;
+        }
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', init);
+
+        // 页面卸载时关闭WebSocket
+        window.addEventListener('beforeunload', function() {
+            if (websocket) {
+                websocket.close();
+            }
+        });
+    </script>
+</body>
+</html>

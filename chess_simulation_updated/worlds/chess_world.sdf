@@ -1,0 +1,394 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="chess_world">
+
+    <!-- 物理引擎设置 -->
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- 重力 -->
+    <gravity>0.0 0.0 -9.81</gravity>
+
+    <!-- 磁场 -->
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+
+    <!-- 大气模型 -->
+    <atmosphere type="adiabatic"/>
+
+    <!-- 场景设置 -->
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+    </scene>
+
+    <!-- 光照 -->
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- 额外的方向光作为环境光补充 -->
+    <light type="directional" name="ambient_light">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.3 0.3 0.3 1</diffuse>
+      <specular>0.0 0.0 0.0 1</specular>
+      <direction>0 0 -1</direction>
+    </light>
+
+    <!-- 地面 -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.0 0.0 0.0 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 桌子 -->
+    <model name="table">
+      <static>true</static>
+      <pose>0.5 0 0.37 0 0 0</pose>
+      <link name="table_top">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1.2 0.8 0.04</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1.2 0.8 0.04</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+        <inertial>
+          <mass>10.0</mass>
+          <inertia>
+            <ixx>0.4</ixx>
+            <iyy>0.6</iyy>
+            <izz>1.0</izz>
+          </inertia>
+        </inertial>
+      </link>
+
+      <!-- 桌腿 -->
+      <link name="leg1">
+        <pose>0.55 0.35 -0.35 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.4 0.2 0.1 1</ambient>
+            <diffuse>0.4 0.2 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <link name="leg2">
+        <pose>0.55 -0.35 -0.35 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.4 0.2 0.1 1</ambient>
+            <diffuse>0.4 0.2 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <link name="leg3">
+        <pose>-0.55 0.35 -0.35 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.4 0.2 0.1 1</ambient>
+            <diffuse>0.4 0.2 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <link name="leg4">
+        <pose>-0.55 -0.35 -0.35 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.7</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.4 0.2 0.1 1</ambient>
+            <diffuse>0.4 0.2 0.1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- 关节连接 -->
+      <joint name="table_leg1_joint" type="fixed">
+        <parent>table_top</parent>
+        <child>leg1</child>
+      </joint>
+      <joint name="table_leg2_joint" type="fixed">
+        <parent>table_top</parent>
+        <child>leg2</child>
+      </joint>
+      <joint name="table_leg3_joint" type="fixed">
+        <parent>table_top</parent>
+        <child>leg3</child>
+      </joint>
+      <joint name="table_leg4_joint" type="fixed">
+        <parent>table_top</parent>
+        <child>leg4</child>
+      </joint>
+    </model>
+
+    <!-- 象棋棋盘 -->
+    <model name="chess_board">
+      <static>true</static>
+      <pose>0.7 0 0.395 0 0 0</pose>
+      <link name="board">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.27 0.30 0.01</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.27 0.30 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.7 1</ambient>
+            <diffuse>0.9 0.9 0.7 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+      </link>
+
+      <!-- 棋盘线条（简化表示） -->
+      <link name="board_lines">
+        <pose>0 0 0.006 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.26 0.29 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <joint name="board_lines_joint" type="fixed">
+        <parent>board</parent>
+        <child>board_lines</child>
+      </joint>
+    </model>
+
+    <!-- ArUco标记 -->
+    <model name="aruco_marker">
+      <static>true</static>
+      <pose>0.55 0.2 0.401 0 0 0</pose>
+      <link name="marker">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+            <specular>0 0 0 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 相机模拟支架 -->
+    <model name="camera_mount">
+      <static>true</static>
+      <pose>0.7 0.5 0.8 0 0.5 -1.57</pose>
+      <link name="mount">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.05 0.03</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.05 0.03</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- 模拟RGB-D相机 -->
+      <link name="camera_link">
+        <pose>0.05 0 0 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.04 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.1 0.1 0.1 1</ambient>
+            <diffuse>0.1 0.1 0.1 1</diffuse>
+          </material>
+        </visual>
+
+        <!-- RGB相机传感器 -->
+        <sensor name="rgb_camera" type="camera">
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+          <topic>camera/rgb/image_raw</topic>
+        </sensor>
+
+        <!-- 深度相机传感器 -->
+        <sensor name="depth_camera" type="depth">
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>R_FLOAT32</format>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>10</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>false</visualize>
+          <topic>camera/depth/image_raw</topic>
+        </sensor>
+      </link>
+
+      <joint name="camera_joint" type="fixed">
+        <parent>mount</parent>
+        <child>camera_link</child>
+      </joint>
+    </model>
+
+    <!-- GUI插件 -->
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <pose>1.5 1.5 1.2 0 0.4 -2.3</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>
