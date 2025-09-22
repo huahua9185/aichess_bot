@@ -1,0 +1,255 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="dofbot_pro">
+    <pose>0.5 0 0.7 0 0 0</pose>
+    <static>false</static>
+
+    <!-- 底座 -->
+    <link name="base_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>2.5</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <iyy>0.01</iyy>
+          <izz>0.02</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.08</radius>
+            <length>0.1</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.08</radius>
+            <length>0.1</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- 关节1 - 底座旋转 -->
+    <link name="shoulder_link">
+      <pose>0 0 0.15 0 0 0</pose>
+      <inertial>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.008</ixx>
+          <iyy>0.008</iyy>
+          <izz>0.015</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.12 0.08 0.1</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.8 0.2 0.2 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.12 0.08 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- 关节2 - 大臂 -->
+    <link name="upper_arm_link">
+      <pose>0 0 0.35 0 0 0</pose>
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.006</ixx>
+          <iyy>0.006</iyy>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.04</radius>
+            <length>0.25</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.2 0.8 0.2 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.04</radius>
+            <length>0.25</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- 关节3 - 小臂 -->
+    <link name="forearm_link">
+      <pose>0 0 0.55 0 0 0</pose>
+      <inertial>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.004</ixx>
+          <iyy>0.004</iyy>
+          <izz>0.008</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.035</radius>
+            <length>0.2</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.2 0.2 0.8 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.035</radius>
+            <length>0.2</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- 末端执行器 -->
+    <link name="end_effector_link">
+      <pose>0 0 0.7 0 0 0</pose>
+      <inertial>
+        <mass>0.3</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <iyy>0.001</iyy>
+          <izz>0.002</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.08 0.06 0.04</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.8 0.8 0.2 1</diffuse>
+          <specular>0.8 0.8 0.8 1</specular>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.08 0.06 0.04</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- 关节定义 -->
+    <joint name="base_to_shoulder" type="revolute">
+      <parent>base_link</parent>
+      <child>shoulder_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>50</effort>
+          <velocity>2.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.5</damping>
+          <friction>0.1</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <joint name="shoulder_to_upper_arm" type="revolute">
+      <parent>shoulder_link</parent>
+      <child>upper_arm_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.57</lower>
+          <upper>1.57</upper>
+          <effort>50</effort>
+          <velocity>2.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.5</damping>
+          <friction>0.1</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <joint name="upper_arm_to_forearm" type="revolute">
+      <parent>upper_arm_link</parent>
+      <child>forearm_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-2.5</lower>
+          <upper>2.5</upper>
+          <effort>30</effort>
+          <velocity>2.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.3</damping>
+          <friction>0.1</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <joint name="forearm_to_end_effector" type="revolute">
+      <parent>forearm_link</parent>
+      <child>end_effector_link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>20</effort>
+          <velocity>3.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.2</damping>
+          <friction>0.05</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Gazebo插件 -->
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+      <topic>/dofbot_pro/joint_states</topic>
+    </plugin>
+
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>base_to_shoulder</joint_name>
+      <joint_name>shoulder_to_upper_arm</joint_name>
+      <joint_name>upper_arm_to_forearm</joint_name>
+      <joint_name>forearm_to_end_effector</joint_name>
+      <topic>/dofbot_pro/joint_commands</topic>
+    </plugin>
+
+  </model>
+</sdf>
