@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package format="3">
+    <name>chess_moveit_config</name>
+    <version>0.1.0</version>
+    <description>MoveIt2配置包用于DOFBOT Pro象棋机器人</description>
+    <maintainer email="chess@robot.com">Chess Robot Team</maintainer>
+    <license>MIT</license>
+
+    <buildtool_depend>ament_cmake</buildtool_depend>
+
+    <!-- MoveIt2 dependencies -->
+    <depend>moveit_ros_planning_interface</depend>
+    <depend>moveit_ros_move_group</depend>
+    <depend>moveit_kinematics</depend>
+    <depend>moveit_planners</depend>
+    <depend>moveit_simple_controller_manager</depend>
+    <depend>joint_state_publisher_gui</depend>
+    <depend>joint_state_publisher</depend>
+    <depend>robot_state_publisher</depend>
+    <depend>rviz2</depend>
+    <depend>tf2_ros</depend>
+    <depend>warehouse_ros</depend>
+
+    <!-- ROS2 Control -->
+    <depend>ros2_control</depend>
+    <depend>ros2_controllers</depend>
+    <depend>gazebo_ros2_control</depend>
+
+    <!-- Chess project dependencies -->
+    <depend>chess_interfaces</depend>
+    <depend>chess_description</depend>
+
+    <!-- Standard ROS2 dependencies -->
+    <depend>rclcpp</depend>
+    <depend>rclpy</depend>
+    <depend>std_msgs</depend>
+    <depend>sensor_msgs</depend>
+    <depend>geometry_msgs</depend>
+    <depend>trajectory_msgs</depend>
+    <depend>moveit_msgs</depend>
+
+    <test_depend>ament_lint_auto</test_depend>
+    <test_depend>ament_lint_common</test_depend>
+
+    <export>
+        <build_type>ament_cmake</build_type>
+    </export>
+</package>

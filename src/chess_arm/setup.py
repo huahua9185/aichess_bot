@@ -26,6 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
             'arm_controller = chess_arm.arm_controller:main',
+            'moveit_arm_controller = chess_arm.moveit_arm_controller:main',
         ],
     },
 )
